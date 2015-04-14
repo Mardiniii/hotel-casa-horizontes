@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  *= require font-awesome
+ *= require jquery.fs.wallpaper
+ *= require magnific-popup
+ *= require owl.carousel
+ *= require owl.theme
+ *= require owl.transitions
  */
 
 /*!

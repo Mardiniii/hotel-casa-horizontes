@@ -11,6 +11,23 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require mi-funcion
+//= require cbpAnimatedHeader
+//= require classie
+//= require contact_me
+//= require jqBootstrapValidation
+//= require jquery.easing.min
+//= require jquery.fs.wallpaper
+//= require jquery.magnific-popup
+//= require jquery.magnific-popup.min
+//= require jquery.mixitup
+//= require owl.carousel
+//= require retina
+//= require retina.min
+//= require vitality
+//= require wow
+//= require wow.min
 //= require_tree .

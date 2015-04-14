@@ -1,48 +1,6 @@
-
-<nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
-                <img src="assets/img/logo.png" class="img-responsive" alt="">
-            </a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a class="page-scroll" href="#page-top"></a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#process">Process</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#work">Work</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#pricing">Pricing</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
-<header style="background-image: url('assets/img/bg-header.jpg');">
+<header style="background-image: url('<%= asset_path('bg-header.jpg') %>');">
     <div class="intro-content">
-        <img src="assets/img/profile.png" class="img-responsive img-centered" alt="">
+        <img src="<%= asset_path('profile.png') %>" class="img-responsive img-centered" alt="">
         <div class="brand-name">Vitality</div>
         <hr class="colored">
         <div class="brand-name-subtext">by Start Bootstrap</div>
@@ -51,6 +9,7 @@
         <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
     </div>
 </header>
+
 <section id="about">
     <div class="container-fluid">
         <div class="row text-center">
@@ -105,7 +64,7 @@
             <div class="col-lg-12">
                 <div class="about-carousel">
                     <div class="item">
-                        <img src="assets/img/people/1.jpg" class="img-responsive" alt="">
+                        <img src="<%= asset_path('people/1.jpg') %>" class="img-responsive" alt="">
                         <div class="caption">
                             <h3>Patricia West</h3>
                             <hr class="colored">
@@ -124,7 +83,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/people/2.jpg" class="img-responsive" alt="">
+                        <img src="<%= asset_path('people/2.jpg') %>" class="img-responsive" alt="">
                         <div class="caption">
                             <h3>Howard Scott</h3>
                             <hr class="colored">
@@ -143,7 +102,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/people/3.jpg" class="img-responsive" alt="">
+                        <img src="<%= asset_path('people/3.jpg') %>" class="img-responsive" alt="">
                         <div class="caption">
                             <h3>Kate Williams</h3>
                             <hr class="colored">
@@ -165,7 +124,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/people/4.jpg" class="img-responsive" alt="">
+                        <img src="<%= asset_path('people/4.jpg') %>" class="img-responsive" alt="">
                         <div class="caption">
                             <h3>Amy Vanderbute</h3>
                             <hr class="colored">
@@ -187,7 +146,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/people/5.jpg" class="img-responsive" alt="">
+                        <img src="<%= asset_path('people/5.jpg') %>" class="img-responsive" alt="">
                         <div class="caption">
                             <h3>Jeremy Davidson</h3>
                             <hr class="colored">
@@ -213,7 +172,8 @@
         </div>
     </div>
 </section>
-<aside class="cta-quote" style="background-image: url('assets/img/bg-aside.jpg');">
+
+<aside class="cta-quote" style="background-image: url('<%= asset_path('bg-aside.jpg') %>');">
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -285,6 +245,7 @@
         </div>
     </div>
 </section>
+
 <section id="work" class="bg-gray">
     <div class="container text-center wow fadeIn">
         <h2>Our Work</h2>
@@ -292,13 +253,14 @@
         <p>Examples of our work which represent our design and marketing capabilities.</p>
     </div>
 </section>
-<section class="portfolio-carousel wow fadeIn">
-    <div class="item" style="background-image: url('assets/img/portfolio/bg-1.jpg')">
+
+<section class="portfolio-carousel wow fadeIn">    
+    <div class="item" style="background-image: url('<%= asset_path('portfolio/bg-1.jpg') %>');">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
                     <div class="project-details">
-                        <img src="assets/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
+                        <img src="<%= asset_path('client-logos/logo-1.png') %>" class="img-responsive client-logo" alt="">
                         <span class="project-name">Project Name</span>
                         <span class="project-description">Branding, Website Design</span>
                         <hr class="colored">
@@ -306,17 +268,18 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-pull-4 hidden-xs">
-                    <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
+
+                    <img src="<%= asset_path('portfolio/mobile-screens.png') %>" class="img-responsive portfolio-image" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="item" style="background-image: url('assets/img/portfolio/bg-2.jpg')">
+    <div class="item" style="background-image: url('<%= asset_path('portfolio/bg-2.jpg') %>');">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
                     <div class="project-details">
-                        <img src="assets/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
+                        <img src="<%= asset_path('client-logos/logo-2.png') %>" class="img-responsive client-logo" alt="">
                         <span class="project-name">Project Name</span>
                         <span class="project-description">Branding, Website Design</span>
                         <hr class="colored">
@@ -324,17 +287,17 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-pull-4 hidden-xs">
-                    <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
+                    <img src="<%= asset_path('portfolio/tablet-screens.png') %>" class="img-responsive portfolio-image" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="item" style="background-image: url('assets/img/portfolio/bg-3.jpg')">
+    <div class="item" style="background-image: url('<%= asset_path('portfolio/bg-3.jpg') %>');">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
                     <div class="project-details">
-                        <img src="assets/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
+                        <img src="<%= asset_path('client-logos/logo-1.png') %>" class="img-responsive client-logo" alt="">
                         <span class="project-name">Project Name</span>
                         <span class="project-description">Branding, Website Design</span>
                         <hr class="colored">
@@ -342,17 +305,17 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-pull-4 hidden-xs">
-                    <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
+                    <img src="<%= asset_path('portfolio/mobile-screens.png') %>" class="img-responsive portfolio-image" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="item" style="background-image: url('assets/img/portfolio/bg-4.jpg')">
+    <div class="item" style="background-image: url('<%= asset_path('portfolio/bg-4.jpg') %>');">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4 col-md-push-8">
                     <div class="project-details">
-                        <img src="assets/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
+                        <img src="<%= asset_path('client-logos/logo-2.png') %>" class="img-responsive client-logo" alt="">
                         <span class="project-name">Project Name</span>
                         <span class="project-description">Branding, Website Design</span>
                         <hr class="colored">
@@ -360,12 +323,13 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-md-pull-4 hidden-xs">
-                    <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
+                    <img src="<%= asset_path('portfolio/tablet-screens.png') %>" class="img-responsive portfolio-image" alt="">
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section>
     <div class="container text-center wow fadeIn">
         <h2>Portfolio</h2>
@@ -396,7 +360,7 @@
                 <div id="portfoliolist">
                     <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/identity/1.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/identity/1.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Generic Inc.</a>
@@ -408,7 +372,7 @@
                     </div>
                     <div class="portfolio web" data-cat="web" href="#portfolioModal2" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/web/1.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/web/1.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Brands</a>
@@ -420,7 +384,7 @@
                     </div>
                     <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal3" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/graphic/1.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/graphic/1.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Excellence</a>
@@ -432,7 +396,7 @@
                     </div>
                     <div class="portfolio web" data-cat="web" href="#portfolioModal4" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/web/2.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/web/2.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">YouTV</a>
@@ -444,7 +408,7 @@
                     </div>
                     <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal1" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/graphic/2.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/graphic/2.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Office Supplies</a>
@@ -456,7 +420,7 @@
                     </div>
                     <div class="portfolio web" data-cat="web" href="#portfolioModal2" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/web/3.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/web/3.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Fooder</a>
@@ -468,7 +432,7 @@
                     </div>
                     <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal3" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/graphic/3.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/graphic/3.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Mountain Tea</a>
@@ -480,7 +444,7 @@
                     </div>
                     <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal4" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/graphic/4.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/graphic/4.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Checkmark</a>
@@ -492,7 +456,7 @@
                     </div>
                     <div class="portfolio identity" data-cat="identity" href="#portfolioModal1" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/identity/2.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/identity/2.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Demish</a>
@@ -504,7 +468,7 @@
                     </div>
                     <div class="portfolio web" data-cat="web" href="#portfolioModal2" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/web/4.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/web/4.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">OneRepublic</a>
@@ -516,7 +480,7 @@
                     </div>
                     <div class="portfolio graphic" data-cat="graphic" href="#portfolioModal3" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/graphic/5.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/graphic/5.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Postable</a>
@@ -528,7 +492,7 @@
                     </div>
                     <div class="portfolio identity" data-cat="identity" href="#portfolioModal4" data-toggle="modal">
                         <div class="portfolio-wrapper">
-                            <img src="assets/img/portfolio/grid/identity/3.jpg" alt="">
+                            <img src="<%= asset_path('portfolio/grid/identity/3.jpg') %>" alt="">
                             <div class="caption">
                                 <div class="caption-text">
                                     <a class="text-title">Simpli Nota</a>
@@ -555,8 +519,8 @@
                                 <hr class="colored">
                                 <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
                                 <div class="testimonial-info">
-                                    <div class="testimonial-img">
-                                        <img src="assets/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                    <div class="testimonial-img">    
+                                        <img src="<%= asset_path('testimonials/1.jpg') %>" class="img-circle img-responsive" alt="">
                                     </div>
                                     <div class="testimonial-author">
                                         <span class="name">Jim Walker</span>
@@ -581,7 +545,7 @@
                                 <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="assets/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
+                                        <img src="<%= asset_path('testimonials/1.jpg') %>" class="img-circle img-responsive" alt="">
                                     </div>
                                     <div class="testimonial-author">
                                         <span class="name">Jim Walker</span>
@@ -603,7 +567,8 @@
         </div>
     </div>
 </section>
-<section id="pricing" class="pricing" style="background-image: url('assets/img/bg-pricing.jpg')">
+
+<section id="pricing" class="pricing" style="background-image: url('<%= asset_path('bg-pricing.jpg') %>');">
     <div class="container wow fadeIn">
         <div class="row text-center">
             <div class="col-lg-12">
@@ -744,7 +709,7 @@
     </div>
 </section>
 <a href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3" class="btn btn-block btn-full-width">Buy Vitality Now!</a>
-<footer class="footer" style="background-image: url('assets/img/bg-footer.jpg')">
+<footer class="footer" style="background-image: url('<%= asset_path('bg-footer.jpg') %>');">
     <div class="container text-center">
         <div class="row">
             <div class="col-md-4 contact-details">
@@ -783,7 +748,7 @@
 </footer>
 <!-- Portfolio Modals -->
 <!-- Example Modal 1 -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-1.jpg')">
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('<%= asset_path('portfolio/bg-1.jpg') %>')">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -795,13 +760,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('client-logos/logo-1.png') %>" class="img-responsive img-centered" alt="">
                         <h2>Project Title</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
                     </div>
                     <div class="col-lg-12">
-                        <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('portfolio/mobile-screens.png') %>" class="img-responsive img-centered" alt="">
                     </div>
                     <div class="col-lg-8 col-lg-offset-2">
                         <ul class="list-inline item-details">
@@ -820,7 +785,7 @@
     </div>
 </div>
 <!-- Example Modal 2 -->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-2.jpg')">
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('<%= asset_path('portfolio/bg-2.jpg') %>')">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -832,13 +797,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('client-logos/logo-2.png') %>" class="img-responsive img-centered" alt="">
                         <h2>Project Title</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
                     </div>
                     <div class="col-lg-12">
-                        <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('portfolio/tablet-screens.png') %>" class="img-responsive img-centered" alt="">
                     </div>
                     <div class="col-lg-8 col-lg-offset-2">
                         <ul class="list-inline item-details">
@@ -857,7 +822,7 @@
     </div>
 </div>
 <!-- Example Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-3.jpg')">
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('<%= asset_path('portfolio/bg-3.jpg') %>')">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -869,13 +834,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('client-logos/logo-1.png') %>" class="img-responsive img-centered" alt="">
                         <h2>Project Title</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
                     </div>
                     <div class="col-lg-12">
-                        <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('portfolio/mobile-screens.png') %>" class="img-responsive img-centered" alt="">
                     </div>
                     <div class="col-lg-8 col-lg-offset-2">
                         <ul class="list-inline item-details">
@@ -894,7 +859,7 @@
     </div>
 </div>
 <!-- Example Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-4.jpg')">
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('<%= asset_path('portfolio/bg-4.jpg') %>')">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -906,13 +871,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('client-logos/logo-2.png') %>" class="img-responsive img-centered" alt="">
                         <h2>Project Title</h2>
                         <hr class="colored">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
                     </div>
                     <div class="col-lg-12">
-                        <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
+                        <img src="<%= asset_path('portfolio/tablet-screens.png') %>" class="img-responsive img-centered" alt="">
                     </div>
                     <div class="col-lg-8 col-lg-offset-2">
                         <ul class="list-inline item-details">
@@ -930,20 +895,3 @@
         </div>
     </div>
 </div>
-<!-- Core Scripts -->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap/bootstrap.min.js"></script>
-<!-- Plugin Scripts -->
-<script src="assets/js/plugins/jquery.easing.min.js"></script>
-<script src="assets/js/plugins/classie.js"></script>
-<script src="assets/js/plugins/cbpAnimatedHeader.js"></script>
-<script src="assets/js/plugins/owl-carousel/owl.carousel.js"></script>
-<script src="assets/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/plugins/jquery.fs.wallpaper.js"></script>
-<script src="assets/js/plugins/jquery.mixitup.js"></script>
-<script src="assets/js/plugins/wow/wow.min.js"></script>
-<script src="assets/js/contact_me.js"></script>
-<script src="assets/js/plugins/jqBootstrapValidation.js"></script>
-<!-- Vitality Theme Scripts -->
-<script src="assets/js/vitality.js"></script>
-
