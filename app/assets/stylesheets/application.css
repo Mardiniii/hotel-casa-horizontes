@@ -345,7 +345,7 @@ header .scroll-down .btn:hover {
 }
 @media (min-width: 768px) {
   header {
-    height: 100%;
+    height: 80%;
     width: 100%;
     padding: 0;
     background-attachment: scroll;
@@ -382,7 +382,7 @@ header .scroll-down .btn:hover {
 }
 header.video .overlay {
   position: absolute;
-  height: 100%;
+  height: 80%;
   width: 100%;
   background: #000;
   z-index: 998;
@@ -437,7 +437,7 @@ aside.cta-quote span.quote {
 }
 @media (min-width: 1025px) {
   aside.cta-quote {
-    background-attachment: fixed;
+    background-attachment: scroll;
   }
 }
 .testimonials {
@@ -1181,3 +1181,76 @@ body.vintage .testimonials .testimonials-carousel .owl-controls .owl-prev,
 body.vintage .testimonials .testimonials-carousel .owl-controls .owl-next {
   line-height: 55px;
 }
+
+/*----MY CSS---*/
+section#header_text {
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+section#about {
+  padding-top: 20px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+@media (min-width: 992px) {
+  div#contact {
+    background-color: red; 
+    height: 105vh;
+  }
+}
+
+section#hotel_info {
+  padding: 0;
+}
+
+div#block_1 {
+  height: 66.6%;
+}
+
+div#block_2 {
+  height: 33.4%;
+}
+
+div#contactus {
+  height: 100%;
+  background-color: #FC9800;
+}
+
+div#twitter {
+  height: 50%;
+  background-color: #0088cc;
+}
+div#casa_horizontes {
+  height: 50%;
+  background-color: rgb(186,33,30);
+}
+div#youtube {
+  height: 50%;
+  background-color: rgb(186,33,30);
+}
+div#facebook {
+  height: 50%;
+  background-color: white;
+}
+
+div#location {
+  height: 100%;
+  background-color: gray;
+}
+
+div#address {
+  height: 100%;
+  background-color: white;
+}
+
+div#thumbnail {
+  height: 100%;
+  background-color: green;
+}
+
+/*-------------*/
