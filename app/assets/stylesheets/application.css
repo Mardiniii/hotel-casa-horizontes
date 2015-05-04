@@ -1197,60 +1197,93 @@ section#about {
    margin: 0 !important;
 }
 
-@media (min-width: 992px) {
-  div#contact {
-    background-color: red; 
-    height: 105vh;
-  }
-}
-
 section#hotel_info {
   padding: 0;
 }
 
-div#block_1 {
-  height: 66.6%;
-}
-
-div#block_2 {
-  height: 33.4%;
-}
-
 div#contactus {
-  height: 100%;
+  height: 69vh;
   background-color: #FC9800;
 }
 
 div#twitter {
-  height: 50%;
+  height: 34.5vh;
   background-color: #0088cc;
 }
 div#casa_horizontes {
-  height: 50%;
+  height: 34.5vh;
   background-color: rgb(186,33,30);
 }
 div#youtube {
-  height: 50%;
+  height: 34.5vh;
   background-color: rgb(186,33,30);
 }
 div#facebook {
-  height: 50%;
+  height: 34.5vh;
   background-color: white;
 }
 
 div#location {
-  height: 100%;
+  height: 34.5vh;
   background-color: gray;
 }
 
 div#address {
-  height: 100%;
+  height: 34.5vh;
   background-color: white;
 }
 
 div#thumbnail {
-  height: 100%;
+  height: 34.5vh;
   background-color: green;
+}
+
+img#twitter_logo {
+  width: 35%;
+  height: 35%;position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+img#casa_horizontes_logo {
+  width: 55%;
+  height: 110%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+img#youtube_logo {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+img#facebook_logo {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.navbar-header a.navbar-brand {
+  width: 45%;
+  height: 90%
 }
 
 /*-------------*/
