@@ -25,6 +25,7 @@
  * Copyright 2013-2015 Start Bootstrap Themes
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
+
 html,
 body {
   height: 100%;
@@ -399,6 +400,56 @@ header.video .scroll-down {
     opacity: 0.5;
   }
 }
+
+/*aside.cta-quote {
+  color: white;
+  background-color: #222222;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+aside.cta-quote span.quote {
+  display: block;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  aside.cta-quote {
+    background-attachment: scroll;
+    padding: 150px 0;
+    height: 90vh;
+  }
+  aside.cta-quote span.quote {
+    font-size: 36px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 768px) {
+  aside.cta-quote {
+    background-attachment: scroll;
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  aside.cta-quote {
+    padding: 300px 0;
+  }
+  aside.cta-quote span.quote {
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+@media (min-width: 1025px) {
+  aside.cta-quote {
+    background-attachment: scroll;
+  }
+}*/
+
 aside.cta-quote {
   color: white;
   background-color: #222222;
@@ -437,9 +488,12 @@ aside.cta-quote span.quote {
 }
 @media (min-width: 1025px) {
   aside.cta-quote {
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
 }
+
+
+
 .testimonials {
   text-align: center;
 }
@@ -1287,5 +1341,9 @@ img#facebook_logo {
 }
 section#contact_us {
   padding-bottom: 0;
+}
+
+header#about_us {
+  height: 100vh;
 }
 /*-------------*/
