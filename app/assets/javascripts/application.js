@@ -14,7 +14,6 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
-//= require mi-funcion
 //= require cbpAnimatedHeader
 //= require classie
 //= require contact_me
