@@ -189,7 +189,7 @@ hr.colored {
   }
 }
 .text-primary {
-  color: #ef4035;
+  color: rgb(235,211,119);
 }
 .navbar-fixed-top {
   margin-bottom: 0;
@@ -433,7 +433,7 @@ aside.cta-quote span.quote {
   }
 }*/
 
-aside.cta-quote {
+aside.cta-quote, section#experiences_intro {
   color: white;
   background-color: #222222;
   background: no-repeat center center scroll;
@@ -444,7 +444,7 @@ aside.cta-quote {
   padding: 100px 0;
   text-align: center;
 }
-aside.cta-quote span.quote {
+aside.cta-quote span.quote, section#experiences_intro {
   display: block;
   font-size: 30px;
   line-height: 32px;
@@ -1350,7 +1350,11 @@ section#contact_us {
   padding-bottom: 0;
 }
 
-section#golden_heads_club {
+
+
+
+
+section#golden_heads_club, section#resume_about_us {
   padding: 0 0;
 }
 
@@ -1360,11 +1364,12 @@ section#golden_heads_club aside {
 
 div#opacity_text {
   color: white;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(33, 47, 38, 0.9);
 }
 
 section#golden_heads_club span.quote {
   margin-top: 100px;
+  margin-bottom: 65px;
   display: block;
   font-size: 30px;
   line-height: 32px;
@@ -1377,13 +1382,71 @@ section#golden_heads_club #section_text_box {
 }
 
 section#golden_heads_club div#btn_call_to_action {
-  margin-top: 60px;
+  margin-top: 120px;
 }
+
+
+
+
+
+
+section#resume_about_us #section_text_box {
+  padding-left: 80px;
+  padding-right: 80px; 
+}
+
+section#resume_about_us aside {
+  min-height: 800px;
+}
+
+section#resume_about_us div#section_text_box{
+  margin-top: 100px;
+}
+
+section#resume_about_us div#btn_call_to_action {
+  margin-top: 30px;
+}
+
+section#resume_about_us img#image_logo {
+  width: 180px;
+  height: 252px;
+  margin: 0 auto;
+}
+
+
+
+section#experiences_intro {
+  background-color: rgb(47,63,33);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+section#experiences_intro div#section_text_box {
+  padding-top: 0px;
+}
+
+section#experiences_intro span.quote {
+  font-size: 40px;
+}
+
+
+
+
 
 @media (max-width: 768px) {
   section#golden_heads_club span.quote {
     margin-top: 0px;     
   }
+
+  section#resume_about_us div#section_text_box {
+    margin-top: 0px;     
+  }
+
+  section#resume_about_us #section_text_box {
+    padding-left: 40px;
+    padding-right: 40px; 
+  }  
+
 }
 
 @media (max-width: 480px) {
@@ -1414,8 +1477,21 @@ section#golden_heads_club div#btn_call_to_action {
 
 @media (max-width: 992px) {
   section#golden_heads_club span.quote {
-    margin-top: 0px;     
+    margin-top: 50px; 
+    margin-bottom: 25px;    
   }  
+  section#golden_heads_club div#btn_call_to_action {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+  section#resume_about_us div#section_text_box {
+    margin-top: 50px; 
+    margin-bottom: 25px;    
+  }  
+  section#resume_about_us div#btn_call_to_action {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 1025px) {
