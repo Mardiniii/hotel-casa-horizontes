@@ -1355,12 +1355,22 @@ aside#the_temple_2{
   /*height: 100vh;*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   aside#the_temple_2{
     padding-bottom: 200px;
   }
+  aside.cta-quote span.section-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  aside div#section_text_box {
+    padding-top: 15px;
+  }
+  aside.cta-quote span.quote {
+    padding-bottom: 8px;
+  }
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   aside#the_temple_2{
     padding-bottom: 300px;
   }
