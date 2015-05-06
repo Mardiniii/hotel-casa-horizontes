@@ -466,6 +466,7 @@ aside.cta-quote span.quote {
   font-size: 30px;
   line-height: 32px;
   font-weight: 300;
+  padding-bottom: 15px;
 }
 @media (min-width: 768px) {
   aside.cta-quote {
@@ -1093,8 +1094,9 @@ footer.footer .copyright p.small {
   }
 }
 .btn-outline-light {
-  color: white;
-  border: 1px solid white;
+  color: rgb(235,211,119);
+  font-size: 17px;
+  border: none;
   background: transparent;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -1102,8 +1104,7 @@ footer.footer .copyright p.small {
 }
 .btn-outline-light:hover,
 .btn-outline-light:focus {
-  color: #ef4035;
-  background: white;
+  color: white;
   outline: none;
 }
 .btn-outline-dark {
@@ -1339,4 +1340,47 @@ img#facebook_logo {
   width: 0%;
   height: 0%;
 }
+
+aside#the_temple_2{
+  color: white;
+  background-color: #222222;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 0;
+  text-align: center;
+  /*height: 100vh;*/
+}
+
+@media (max-width: 768px) {
+  aside#the_temple_2{
+    height: 65vh;
+  }
+}
+@media (min-width: 768px) {
+  aside#the_temple_2{
+    height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  aside#the_temple_2{
+    height: 100vh;
+  }
+}
+@media (min-width: 1025px) {
+  aside#the_temple_2{
+    height: 100vh;
+  }
+}
+
+div#section_text {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+div#section_text_box {
+  padding-top: 30px;
+}
+
 /*-------------*/
