@@ -69,9 +69,9 @@ input.form-control:focus {
   transition: all 0.5s;
 }
 .btn-primary {
-  color: #ffffff;
-  background-color: #ef4035;
-  border-color: #ef4035;
+  color: rgb(235,211,119);
+  background-color: transparent;
+  border-color: rgb(235,211,119);
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -82,9 +82,9 @@ input.form-control:focus {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #ffffff;
-  background-color: #ed2a1d;
-  border-color: #ec2114;
+  color: green;
+  background-color: transparent;
+  border-color: rgb(235,211,119);
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -200,9 +200,8 @@ hr.colored {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #ef4035;
-  background-color: white;
-  border-radius: 0;
+  color: rgb(235,211,119);
+  background-color: transparent;
 }
 .navbar-default {
   background-color: #ef4035;
@@ -1342,8 +1341,8 @@ img#facebook_logo {
 }
 
 .navbar-header a.navbar-brand {
-  width: 0%;
-  height: 0%;
+  width: 11%;
+  height: 11%;
 }
 
 aside#the_temple_2{
