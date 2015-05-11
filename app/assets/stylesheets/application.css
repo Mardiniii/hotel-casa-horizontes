@@ -1244,7 +1244,7 @@ section#hotel_info {
 
 div#contactus {
   height: 69vh;
-  background-color: #FC9800;
+  background-color: rgba(33, 47, 38, 0.9);
 }
 
 div#twitter {
@@ -1283,7 +1283,7 @@ div#map-canvas {
 
 div#address {
   height: 34.5vh;
-  background-color: white;
+  background-color: rgb(47,63,33);
 }
 
 div#thumbnail {
@@ -1340,12 +1340,16 @@ img#facebook_logo {
   bottom: 0;
 }
 
+div.nabvar-header {
+  display: inline-block;
+}
 .navbar-header a.navbar-brand {
-  width: 11%;
-  height: 11%;
+  margin: 5px auto;
+  width: 70px;
+  height: auto;
 }
 
-aside#the_temple_2{
+aside.the_temple_2{
   color: white;
   background-color: #222222;
   background: no-repeat center center scroll;
@@ -1365,6 +1369,7 @@ div#section_text {
 
 div#section_text_box {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 section#contact_us {
@@ -1422,7 +1427,7 @@ section#resume_about_us aside {
 }
 
 section#resume_about_us div#section_text_box{
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 section#resume_about_us div#btn_call_to_action {
@@ -1494,7 +1499,7 @@ aside#i_expeditions div#experiences_text{
 }
 
 @media (max-width: 480px) {
-  aside#the_temple_2{
+  aside.the_temple_2{
     padding-bottom: 200px;
   }
   aside.cta-quote span.section-text {
@@ -1509,19 +1514,19 @@ aside#i_expeditions div#experiences_text{
   }
 }
 @media (max-width: 768px) {
-  aside#the_temple_2{
+  aside.the_temple_2{
     padding-bottom: 300px;
   }
 }
 @media (min-width: 992px) {
-  aside#the_temple_2{
+  aside.the_temple_2{
     padding-bottom: 540px;
   }  
 }
 
 @media (max-width: 992px) {
   section#golden_heads_club span.quote {
-    margin-top: 50px; 
+    margin-top: 0px; 
     margin-bottom: 25px;    
   }  
   section#golden_heads_club div#btn_call_to_action {
@@ -1539,7 +1544,7 @@ aside#i_expeditions div#experiences_text{
 }
 
 @media (min-width: 1025px) {
-  aside#the_temple_2{
+  aside.the_temple_2{
     padding-bottom: 540px;
   }
 }
@@ -1551,5 +1556,134 @@ section#contact {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+section#temple {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+section#experiences_intro {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes{
+    height: 211px;
+  }
+}
+
+@media (max-width: 468px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail {
+    height: 192.5px;
+  }
+}
+
+span#contact_us_block {
+  color: rgb(235,211,119);
+  font-family: 'Satisfy';
+  font-size: 90px;
+}
+
+ul.nav.navbar-nav {
+  padding-top: 20px;
+  vertical-align: middle;
+}
+
+button.navbar-toggle {
+  margin-top: 27px;
+}
+
+@media (max-width: 992px) { 
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail { 
+  height: 380px;
+}
+}
+
+
+
+@media (max-width: 830px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail { 
+    height: 380px;
+  }
+
+  img.casa_horizontes_logo {
+    width: 75%;
+    height: 110%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail {
+    height: 370px;
+  }
+
+  img.casa_horizontes_logo {
+    width: 65%;
+    height: 110%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail {
+    height: 315px;
+  }
+
+  img.casa_horizontes_logo {
+    width: 65%;
+    height: 110%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail {
+    height: 275px;
+  }
+
+  img.casa_horizontes_logo {
+    width: 65%;
+    height: 110%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  div#facebook, div#twitter, div#youtube, div#casa_horizontes, div#address, div#thumbnail {
+    height: 200px;
+  }
+
+  img.casa_horizontes_logo {
+    width: 65%;
+    height: 110%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }
 /*-------------*/
