@@ -174,7 +174,7 @@ hr.right {
   margin: 15px 0 15px auto;
 }
 hr.colored {
-  border-color: #ef4035;
+  border-color: rgb(235,211,119);
 }
 @media (min-width: 768px) {
   hr {
@@ -299,6 +299,7 @@ header {
   padding: 100px 0;
 }
 header .intro-content {
+  padding-top: 170px;
   color: white;
   text-align: center;
   position: relative;
@@ -315,6 +316,7 @@ header .brand-name-subtext {
   font-size: 20px;
   line-height: 20px;
   font-weight: 150;
+  color: rgb(236, 211, 118);
 }
 header img {
   max-width: 150px;
@@ -1004,6 +1006,7 @@ aside.cta-quote span.quote, section#experiences_intro {
 .floating-label-form-group input,
 .floating-label-form-group textarea {
   z-index: 1;
+  color: white;
   position: relative;
   padding-right: 0;
   padding-left: 0;
@@ -1039,13 +1042,13 @@ aside.cta-quote span.quote, section#experiences_intro {
   opacity: 1;
 }
 .floating-label-form-group-with-focus label {
-  color: #ef4035;
+  color: rgb(235,211,119);
 }
 form .row:first-child .floating-label-form-group {
   border-top: 1px solid #e1e1e1;
 }
 footer.footer {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1054,16 +1057,17 @@ footer.footer {
   padding: 50px 0 20px;
 }
 footer.footer a {
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 footer.footer a:hover {
-  color: white;
+  color: gray;
 }
 footer.footer p {
   font-size: 22px;
 }
 footer.footer .contact-details {
   margin: 75px 0;
+  color: white;
 }
 footer.footer .social {
   margin-bottom: 75px;
@@ -1246,22 +1250,34 @@ div#contactus {
 
 div#twitter {
   height: 34.5vh;
-  background-color: #0088cc;
+  background-color: #222222;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 div#casa_horizontes {
   height: 34.5vh;
-  background-color: rgb(186,33,30);
+  background-color: rgb(47,63,33);
 }
 div#youtube {
   height: 34.5vh;
-  background-color: rgb(186,33,30);
+  background-color: #222222;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 div#facebook {
   height: 34.5vh;
-  background-color: white;
+  background-color: rgb(47,63,33);
 }
 
-div#location {
+div#map-canvas {
   height: 34.5vh;
   background-color: gray;
 }
@@ -1273,7 +1289,13 @@ div#address {
 
 div#thumbnail {
   height: 34.5vh;
-  background-color: green;
+  background-color: #222222;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 img#twitter_logo {
@@ -1286,7 +1308,7 @@ img#twitter_logo {
   bottom: 0;
 }
 
-img#casa_horizontes_logo {
+img.casa_horizontes_logo {
   width: 55%;
   height: 110%;
   position: absolute;
@@ -1347,6 +1369,7 @@ div#section_text_box {
 }
 
 section#contact_us {
+  padding-top: 0;
   padding-bottom: 0;
 }
 
@@ -1415,6 +1438,12 @@ section#resume_about_us img#image_logo {
 
 
 
+
+
+
+
+
+
 section#experiences_intro {
   background-color: rgb(47,63,33);
   padding-top: 50px;
@@ -1427,6 +1456,22 @@ section#experiences_intro div#section_text_box {
 
 section#experiences_intro span.quote {
   font-size: 40px;
+}
+
+
+
+aside#i_expeditions {
+  background-attachment: fixed;
+}
+
+
+aside#i_expeditions span.quote{
+  font-size: 25px;
+}
+
+aside#i_expeditions div#experiences_text{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 15px;
 }
 
 
@@ -1498,5 +1543,14 @@ section#experiences_intro span.quote {
   aside#the_temple_2{
     padding-bottom: 540px;
   }
+}
+
+section#contact {
+  color: white;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 /*-------------*/

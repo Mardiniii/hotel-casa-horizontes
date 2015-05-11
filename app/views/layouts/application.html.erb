@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body id="page-top">
 	<nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
@@ -18,7 +19,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand page-scroll" href="#page-top">
-          <img src="http://i592.photobucket.com/albums/tt5/Mardini03/a9.png" class="img-responsive" alt="">
+          <img src="http://i592.photobucket.com/albums/tt5/Mardini03/a2.png" class="img-responsive" alt="">
         </a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,21 +28,23 @@
           <li class="hidden">
             <a class="page-scroll" href="#page-top"></a>
           </li>
+
           <li>
-            <%= link_to 'About Us', about_us_path %>
+            <a class="page-scroll" href="#resume_about_us">About Us</a>
           </li>
+
           <li>
-            <a class="page-scroll" href="#the_temple">The Temple</a>
+            <a class="page-scroll" href="#the_temple_3">The Temple</a>
           </li>
+
           <li>
-            <a class="page-scroll" href="#experiences">Experiences</a>
+            <a class="page-scroll" href="#experiences_intro">Experiences</a>
           </li>
+
           <li>
-            <a class="page-scroll" href="#blog">Blog</a>
+            <a class="page-scroll" href="#contact">Contact Us</a>
           </li>
-          <li>
-            <a class="page-scroll" href="#contact_us">Contact Us</a>
-          </li>
+
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -50,7 +53,7 @@
 	</nav>
 	<%= yield %>
 
-  <footer class="footer" style="background-image: url('<%= asset_path('bg-footer.jpg') %>');">
+  <footer class="footer" style="background-image: url('http://i592.photobucket.com/albums/tt5/Mardini03/pool.jpg');">
       <div class="container text-center">
           <div class="row">
               <div class="col-md-4 contact-details">
@@ -66,18 +69,6 @@
                   <h4><i class="fa fa-envelope"></i> Email</h4>
                   <p><a href="mailto:mail@example.com">mail@example.com</a>
                   </p>
-              </div>
-          </div>
-          <div class="row social">
-              <div class="col-lg-12">
-                  <ul class="list-inline">
-                      <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-                      </li>
-                      <li><a href="#"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                      </li>
-                      <li><a href="#"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                      </li>
-                  </ul>
               </div>
           </div>
           <div class="row copyright">
