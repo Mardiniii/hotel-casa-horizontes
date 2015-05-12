@@ -17,7 +17,6 @@
 //= require cbpAnimatedHeader
 //= require classie
 //= require contact_me
-//= require jqBootstrapValidation
 //= require jquery.easing.min
 //= require jquery.fs.wallpaper
 //= require jquery.magnific-popup
