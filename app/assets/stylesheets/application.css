@@ -1064,9 +1064,13 @@ footer.footer a:hover {
 footer.footer p {
   font-size: 22px;
 }
-footer.footer .contact-details {
+footer.footer .contact-details, footer.footer .contact-details a {
   margin: 75px 0;
-  color: white;
+  color: black;
+}
+
+footer.footer .contact-details h4{
+  color: rgb(235,211,119);;
 }
 footer.footer .social {
   margin-bottom: 75px;
@@ -1583,6 +1587,10 @@ span#contact_us_block {
   color: rgb(235,211,119);
   font-family: 'Satisfy';
   font-size: 90px;
+}
+
+div#contactus h4, div#contactus h2, div#contactus h4, div#contactus p {
+  color: white;
 }
 
 ul.nav.navbar-nav {
