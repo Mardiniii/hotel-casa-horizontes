@@ -2,6 +2,6 @@ class PagesController < ApplicationController
 	def home
 	end
 
-	def about_us
+	def spahish_home
 	end
 end
