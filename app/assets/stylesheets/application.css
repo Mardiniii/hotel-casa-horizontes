@@ -1416,7 +1416,11 @@ section#golden_heads_club #section_text_box, section#golden_heads_club_new #sect
   padding-right: 15px; 
 }
 
-section#golden_heads_club div#btn_call_to_action, section#golden_heads_club_new div#btn_call_to_action {
+section#golden_heads_club div#btn_call_to_action {
+  margin-top: 40px;
+}
+
+section#golden_heads_club_new div#btn_call_to_action {
   margin-top: 120px;
 }
 
@@ -1437,7 +1441,7 @@ section#resume_about_us div#btn_call_to_action, section#hotel_images div#btn_cal
   margin-top: 30px;
 }
 
-section#resume_about_us img#image_logo, section#hotel_images img#image_logo{
+section#golden_heads_club img#image_logo, section#resume_about_us img#image_logo, section#hotel_images img#image_logo{
   width: 180px;
   height: 252px;
   margin: 0 auto;
