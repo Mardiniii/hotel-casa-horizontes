@@ -26,26 +26,19 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li class="hidden">
-            <a class="page-scroll" href="#page-top"></a>
-          </li>
-
-          <li>
-            <a class="page-scroll" href="#resume_about_us">About Us</a>
-          </li>
-
-          <li>
-            <a class="page-scroll" href="#temple">The Temple</a>
-          </li>
-
-          <li>
-            <a class="page-scroll" href="#experiences_intro">Experiences</a>
-          </li>
-
-          <li>
-            <a class="page-scroll" href="#contact">Contact Us</a>
-          </li>
-
+          <% if current_page?(root_path)%>
+            <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+            <li><a class="page-scroll" href="#resume_about_us">Sobre nosotros</a></li>
+            <li><a class="page-scroll" href="#temple">La Casa</a></li>
+            <li><a class="page-scroll" href="#contact">Contáctanos</a></li>            
+            <li><a class="page-scroll" href="#experiences_intro">Ubicación</a></li>
+          <% else %>
+            <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
+            <li><a class="page-scroll" href="#resume_about_us">About Us</a></li>
+            <li><a class="page-scroll" href="#temple">The Temple</a></li>
+            <li><a class="page-scroll" href="#experiences_intro">Experiences</a></li>
+            <li><a class="page-scroll" href="#contact">Contact Us</a></li>
+          <% end %>          
         </ul>
       </div>
       <!-- /.navbar-collapse -->

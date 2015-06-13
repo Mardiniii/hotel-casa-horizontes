@@ -1385,8 +1385,12 @@ section#contact_us {
 
 
 
-section#golden_heads_club, section#resume_about_us {
+section#golden_heads_club_new, section#golden_heads_club, section#resume_about_us, section#hotel_images {
   padding: 0 0;
+}
+
+section#golden_heads_club_new aside {
+  min-height: 1200px;
 }
 
 section#golden_heads_club aside {
@@ -1398,8 +1402,8 @@ div#opacity_text {
   background-color: rgba(33, 47, 38, 0.9);
 }
 
-section#golden_heads_club span.quote {
-  margin-top: 100px;
+section#golden_heads_club span.quote, section#golden_heads_club_new span.quote{
+  margin-top: 55px;
   margin-bottom: 65px;
   display: block;
   font-size: 30px;
@@ -1407,21 +1411,16 @@ section#golden_heads_club span.quote {
   font-weight: 300;  
 }
 
-section#golden_heads_club #section_text_box {
+section#golden_heads_club #section_text_box, section#golden_heads_club_new #section_text_box {
   padding-left: 15px;
   padding-right: 15px; 
 }
 
-section#golden_heads_club div#btn_call_to_action {
+section#golden_heads_club div#btn_call_to_action, section#golden_heads_club_new div#btn_call_to_action {
   margin-top: 120px;
 }
 
-
-
-
-
-
-section#resume_about_us #section_text_box {
+section#resume_about_us #section_text_box, section#hotel_images #section_text_box{
   padding-left: 80px;
   padding-right: 80px; 
 }
@@ -1430,15 +1429,15 @@ section#resume_about_us aside {
   min-height: 800px;
 }
 
-section#resume_about_us div#section_text_box{
+section#resume_about_us div#section_text_box, section#hotel_images div#section_text_box{
   margin-top: 60px;
 }
 
-section#resume_about_us div#btn_call_to_action {
+section#resume_about_us div#btn_call_to_action, section#hotel_images div#btn_call_to_action{
   margin-top: 30px;
 }
 
-section#resume_about_us img#image_logo {
+section#resume_about_us img#image_logo, section#hotel_images img#image_logo{
   width: 180px;
   height: 252px;
   margin: 0 auto;
@@ -1487,15 +1486,15 @@ aside#i_expeditions div#experiences_text{
 
 
 @media (max-width: 768px) {
-  section#golden_heads_club span.quote {
+  section#golden_heads_club span.quote, section#golden_heads_club_new span.quote, section#hotel_images span.quote{
     margin-top: 0px;     
   }
 
-  section#resume_about_us div#section_text_box {
+  section#resume_about_us div#section_text_box, section#hotel_images div#section_text_box{
     margin-top: 0px;     
   }
 
-  section#resume_about_us #section_text_box {
+  section#resume_about_us #section_text_box, section#hotel_images #section_text_box{
     padding-left: 40px;
     padding-right: 40px; 
   }  
@@ -1529,19 +1528,19 @@ aside#i_expeditions div#experiences_text{
 }
 
 @media (max-width: 992px) {
-  section#golden_heads_club span.quote {
+  section#golden_heads_club span.quote, section#golden_heads_club_new span.quote {
     margin-top: 0px; 
     margin-bottom: 25px;    
   }  
-  section#golden_heads_club div#btn_call_to_action {
+  section#golden_heads_club div#btn_call_to_action, section#golden_heads_club_new div#btn_call_to_action {
     margin-top: 60px;
     margin-bottom: 30px;
   }
-  section#resume_about_us div#section_text_box {
+  section#resume_about_us div#section_text_box, section#hotel_images div#section_text_box  {
     margin-top: 50px; 
     margin-bottom: 25px;    
   }  
-  section#resume_about_us div#btn_call_to_action {
+  section#resume_about_us div#btn_call_to_action, section#hotel_images div#btn_call_to_action{
     margin-top: 30px;
     margin-bottom: 30px;
   }
@@ -1693,5 +1692,14 @@ button.navbar-toggle {
     right: 0;
     bottom: 0;
   }
+}
+h3.image-gallery-title {
+  color: rgb(235,211,119);
+  font-family: "Roboto";
+  padding: 50px 0 50px 0;
+}
+
+span.location-text {
+  font-size: 22px;
 }
 /*-------------*/
