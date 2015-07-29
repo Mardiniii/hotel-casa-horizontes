@@ -81,23 +81,5 @@ $(document).ready(function () {
         $(".navigation__menu-text").toggleText("X", "Menu");
       }
     }).animate({ opacity: 0 }, { duration: 4000, queue: false });
-  });
-
-  $('#realismo_gallery').click(function (e) {
-    $(this).lightGallery({
-      dynamic: true,
-      html: true,
-      mobileSrc: false,
-      dynamicEl: [{ 'src': 'images/gallery/gallery_demo01.jpg', 'thumb': 'images/gallery/gallery_demo01.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo02.jpg', 'thumb': 'images/gallery/gallery_demo02.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo03.jpg', 'thumb': 'images/gallery/gallery_demo03.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo04.jpg', 'thumb': 'images/gallery/gallery_demo04.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo05.jpg', 'thumb': 'images/gallery/gallery_demo05.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo06.jpg', 'thumb': 'images/gallery/gallery_demo06.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo07.jpg', 'thumb': 'images/gallery/gallery_demo07.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo08.jpg', 'thumb': 'images/gallery/gallery_demo08.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo09.jpg', 'thumb': 'images/gallery/gallery_demo09.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo10.jpg', 'thumb': 'images/gallery/gallery_demo10.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo11.jpg', 'thumb': 'images/gallery/gallery_demo11.jpg', 'sub-html': '#dynamicHtml' }]
-    });
-  });
-
-  $('#hospedaje_gallery').click(function (e) {
-    $(this).lightGallery({
-      dynamic: true,
-      html: true,
-      mobileSrc: false,
-      dynamicEl: [{ 'src': 'images/gallery/gallery_demo12.jpg', 'thumb': 'images/gallery/gallery_demo12.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo13.jpg', 'thumb': 'images/gallery/gallery_demo13.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo14.jpg', 'thumb': 'images/gallery/gallery_demo14.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo15.jpg', 'thumb': 'images/gallery/gallery_demo15.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo16.jpg', 'thumb': 'images/gallery/gallery_demo16.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo17.jpg', 'thumb': 'images/gallery/gallery_demo17.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo18.jpg', 'thumb': 'images/gallery/gallery_demo18.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo19.jpg', 'thumb': 'images/gallery/gallery_demo19.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo20.jpg', 'thumb': 'images/gallery/gallery_demo20.jpg', 'sub-html': '#dynamicHtml' }, { 'src': 'images/gallery/gallery_demo21.jpg', 'thumb': 'images/gallery/gallery_demo21.jpg', 'sub-html': '#dynamicHtml' }]
-    });
-  });
+  });  
 });
