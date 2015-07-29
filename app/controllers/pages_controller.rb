@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
 	def spahish_home
 	end
+
+	def final_home
+
+	end
 end
