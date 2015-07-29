@@ -14,4 +14,7 @@
 //= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.pagepiling
+//= require jquery.pagepiling.min
+//= require light-gallery
 //= require_tree .
