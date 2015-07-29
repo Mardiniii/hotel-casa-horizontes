@@ -17,4 +17,5 @@
 //= require jquery.pagepiling
 //= require jquery.pagepiling.min
 //= require light-gallery
+//= require main
 //= require_tree .

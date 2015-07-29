@@ -606,7 +606,7 @@ body {
 
 /* line 14, app/scss/modules/realismo.scss */
 .section#realismo {
-  background-image: url(../images/sections/realismo.jpg);
+  background-image: url(asset-path('casa-horizontes/sections/realismo.jpg'));
 }
 /* line 17, app/scss/modules/realismo.scss */
 .section#realismo .section__deck {
@@ -631,7 +631,7 @@ body {
   height: 377px;
   margin: auto;
   width: 100%;
-  background-image: url(../images/decorations/realismo.png);
+  background-image: url(asset-path('casa-horizontes/decorations/realismo.png'));
 }
 @media (min-width: 768px) and (max-width: 1059px) {
   /* line 32, app/scss/modules/realismo.scss */
@@ -647,7 +647,7 @@ body {
   height: 135px;
   margin: auto;
   width: 100px;
-  background-image: url(../images/decorations/colombia.png);
+  background-image: url(asset-path('casa-horizontes/decorations/colombia.png'));
 }
 @media (min-width: 768px) and (max-width: 1059px) {
   /* line 49, app/scss/modules/realismo.scss */
@@ -708,7 +708,7 @@ body {
 
 /* line 14, app/scss/modules/hospedaje.scss */
 .section#hospedaje {
-  background-image: url(../images/sections/hospedaje.jpg);
+  background-image: url(asset-path('casa-horizontes/sections/hospedaje.jpg'));
 }
 /* line 17, app/scss/modules/hospedaje.scss */
 .section#hospedaje .section__deck {
@@ -726,7 +726,7 @@ body {
   top: 0;
   height: 100vh;
   width: 465px;
-  background-image: url(../images/decorations/hospedaje.png);
+  background-image: url(asset-path('casa-horizontes/decorations/hospedaje.png'));
   background-repeat: no-repeat;
 }
 /* line 41, app/scss/modules/hospedaje.scss */
@@ -736,7 +736,7 @@ body {
   top: 100px;
   height: 100px;
   width: 100px;
-  background-image: url(../images/decorations/antioquia.png);
+  background-image: url(asset-path('casa-horizontes/decorations/antioquia.png'));
   background-repeat: no-repeat;
 }
 /* line 54, app/scss/modules/hospedaje.scss */
@@ -781,7 +781,7 @@ body {
 
 /* line 5, app/scss/modules/atardecer.scss */
 .section#atardecer {
-  background-image: url(../images/sections/atardecer.jpg);
+  background-image: url(asset-path('casa-horizontes/sections/atardecer.jpg'));
 }
 /* line 8, app/scss/modules/atardecer.scss */
 .section#atardecer .section__deck {
@@ -803,7 +803,7 @@ body {
   left: 0;
   height: 250px;
   width: 100%;
-  background-image: url(../images/decorations/atardecer.png);
+  background-image: url(asset-path('casa-horizontes/decorations/atardecer.png'));
   background-repeat: no-repeat;
 }
 /* line 33, app/scss/modules/atardecer.scss */
@@ -851,7 +851,7 @@ body {
 
 /* line 5, app/scss/modules/cocina.scss */
 .section#cocina {
-  background-image: url(../images/sections/cocina.jpg);
+  background-image: url(asset-path('casa-horizontes/sections/cocina.jpg'));
 }
 /* line 9, app/scss/modules/cocina.scss */
 .section#cocina .section__deck {
@@ -869,7 +869,7 @@ body {
   left: 0;
   height: 100vh;
   width: 640px;
-  background-image: url(../images/decorations/cocina.png);
+  background-image: url(asset-path('casa-horizontes/decorations/cocina.png'));
   background-position-y: bottom;
   background-repeat: no-repeat;
 }
@@ -927,7 +927,7 @@ body {
   font-size: 18px;
   line-height: 1.3;
   text-align: center;
-  background: url(../images/decorations/chef.png);
+  background: url(asset-path('casa-horizontes/decorations/chef.png'));
 }
 /* line 103, app/scss/modules/cocina.scss */
 .section#cocina .section__link {
@@ -938,7 +938,7 @@ body {
 
 /* line 5, app/scss/modules/invitados.scss */
 .section#invitados {
-  background-image: url(../images/sections/invitados.jpg);
+  background-image: url(asset-path('casa-horizontes/sections/invitados.jpg'));
 }
 /* line 8, app/scss/modules/invitados.scss */
 .section#invitados .section__guest {
@@ -1034,11 +1034,11 @@ body {
 
 /* line 5, app/scss/modules/reserva.scss */
 .section#reserva {
-  background-image: url(../images/sections/reserva.jpg);
+  background-image: url(asset-path('casa-horizontes/sections/reserva.jpg'));
 }
 /* line 8, app/scss/modules/reserva.scss */
 .section#reserva .section__decoration {
-  background-image: url(../images/decorations/reserva.jpg);
+  background-image: url(asset-path('casa-horizontes/decorations/reserva.jpg'));
 }
 /* line 12, app/scss/modules/reserva.scss */
 .section#reserva .section-logo {
