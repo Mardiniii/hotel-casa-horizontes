@@ -1,0 +1,1137 @@
+/*
+  Media Queries
+  =============
+*/
+/* line 1, app/scss/base/document.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 6, app/scss/base/document.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 12, app/scss/base/document.scss */
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 16, app/scss/base/document.scss */
+body {
+  background-color: #fcfcfc;
+  color: #111111;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 1, app/scss/helpers/helpers.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 6, app/scss/helpers/helpers.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 9, app/scss/helpers/helpers.scss */
+.hidden {
+  display: none;
+}
+
+/* line 1, app/scss/layout/grid.scss */
+.container {
+  width: 900px;
+  margin: auto;
+}
+
+/* line 1, app/scss/components/reservation.scss */
+.reservation-box {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 80px;
+  width: 600px;
+  background-color: #00c7c6;
+  border-radius: 10px 10px 0 0;
+  box-shadow: -4px -1px 5px rgba(44, 44, 44, 0.2);
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  animation: reservation 0.6s 0.7s ease-out backwards;
+  -webkit-animation: reservation 0.6s 0.7s ease-out backwards;
+}
+@-webkit-keyframes reservation {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+  }
+}
+@keyframes reservation {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+  }
+}
+/* line 55, app/scss/components/reservation.scss */
+.reservation-box:hover {
+  padding-top: 13px;
+  height: 100px;
+  width: 600px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+/* line 64, app/scss/components/reservation.scss */
+.reservation-box__fieldset {
+  float: left;
+  padding: 7px;
+  margin: 0;
+  width: 33%;
+  border: none;
+}
+/* line 79, app/scss/components/reservation.scss */
+.reservation-box__input {
+  margin: 0;
+  width: 100%;
+}
+/* line 84, app/scss/components/reservation.scss */
+.reservation-box__label {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+/* line 92, app/scss/components/reservation.scss */
+.reservation-box__submit {
+  margin-top: 19px;
+  height: 27px;
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #3cbf43;
+  border: 1px solid #309835;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+/* line 113, app/scss/components/reservation.scss */
+.reservation-box__submit:hover {
+  background-color: #309835;
+  border: 1px solid #3cbf43;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+/* line 1, app/scss/components/logo.scss */
+.main_headline {
+  position: absolute;
+  left: 20px;
+  top: 70px;
+  animation: logo 0.6s 0.7s ease-out backwards;
+  -webkit-animation: logo 0.6s 0.7s ease-out backwards;
+}
+@-webkit-keyframes logo {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+  }
+}
+@keyframes logo {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+  }
+}
+/* line 2, app/scss/components/social.scss */
+.navigation__social {
+  padding-left: 1rem;
+}
+/* line 7, app/scss/components/social.scss */
+.navigation__social-list {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding-left: 1rem;
+}
+/* line 15, app/scss/components/social.scss */
+.navigation__social-item {
+  display: block;
+  float: left;
+}
+/* line 20, app/scss/components/social.scss */
+.navigation__social-link {
+  position: relative;
+  top: 10px;
+  display: block;
+  height: 33px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 34px;
+  background-repeat: no-repeat;
+}
+/* line 33, app/scss/components/social.scss */
+.navigation__social-link--twitter {
+  background-image: url(asset-path('casa-horizontes/icons/twitter-icon.png'));
+}
+/* line 36, app/scss/components/social.scss */
+.navigation__social-link--facebook {
+  background-image: url(asset-path('casa-horizontes/icons/facebook-icon.png'));
+}
+/* line 41, app/scss/components/social.scss */
+.navigation__social-text {
+  font-size: 16px;
+}
+
+/* line 1, app/scss/components/navigation.scss */
+.navigation__social, .navigation__circles, .navigation__menu, .navigation__state {
+  display: inline-block;
+  line-height: 60px;
+}
+
+/* line 5, app/scss/components/navigation.scss */
+.navigation {
+  background: rgba(255, 255, 255, 0.9);
+  height: 60px;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  width: 100vw;
+  z-index: 999;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+/* line 19, app/scss/components/navigation.scss */
+.navigation:hover {
+  background: white;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+/* line 25, app/scss/components/navigation.scss */
+.navigation__circles-item {
+  display: inline-block;
+  width: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 10px;
+  background-color: #009493;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 25, app/scss/components/navigation.scss */
+  .navigation__circles-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+/* line 38, app/scss/components/navigation.scss */
+.navigation__circles-item.active {
+  background-color: #009493;
+  position: relative;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+/* line 45, app/scss/components/navigation.scss */
+.navigation__circles-item.active + .navigation__circles-item {
+  background-color: #fff;
+}
+/* line 48, app/scss/components/navigation.scss */
+.navigation__circles-item.active
++ .navigation__circles-item
++ .navigation__circles-item {
+  background-color: #fff;
+}
+/* line 54, app/scss/components/navigation.scss */
+.navigation__circles-item.active
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item {
+  background-color: #fff;
+}
+/* line 60, app/scss/components/navigation.scss */
+.navigation__circles-item.active
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item {
+  background-color: #fff;
+}
+/* line 67, app/scss/components/navigation.scss */
+.navigation__circles-item.active
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item {
+  background-color: #fff;
+}
+/* line 75, app/scss/components/navigation.scss */
+.navigation__circles-item.active
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item
++ .navigation__circles-item {
+  background-color: #fff;
+}
+/* line 85, app/scss/components/navigation.scss */
+.navigation__circles-link {
+  background: transparent;
+  display: block;
+  border: 1px solid #009493;
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* line 94, app/scss/components/navigation.scss */
+.navigation__circles-list {
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+/* line 100, app/scss/components/navigation.scss */
+.navigation__circles-list:before {
+  position: absolute;
+  border: 1px solid #009493;
+  display: block;
+  content: '';
+  top: 29px;
+  left: 40px;
+  width: 380px;
+  z-index: -1;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 100, app/scss/components/navigation.scss */
+  .navigation__circles-list:before {
+    width: 250px;
+  }
+}
+/* line 124, app/scss/components/navigation.scss */
+.navigation__menu-btn {
+  width: 190px;
+  color: #fcfcfc;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  text-align: center;
+  background-color: #5b5b5b;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+}
+/* line 139, app/scss/components/navigation.scss */
+.navigation__menu-btn:hover {
+  background-color: #333333;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+}
+/* line 154, app/scss/components/navigation.scss */
+.navigation__state-text {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+  font-weight: lighter;
+  padding-left: 1.5rem;
+  padding-right: .5rem;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  width: 250px;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 154, app/scss/components/navigation.scss */
+  .navigation__state-text {
+    display: inline;
+    width: 194px;
+  }
+}
+
+/* line 172, app/scss/components/navigation.scss */
+.nagivation__menu-list {
+  position: fixed;
+  top: 60px;
+  left: 0px;
+  z-index: 1;
+  margin: 0;
+  padding-left: 1.5%;
+  height: 60px;
+  width: 100%;
+  background-color: #009493;
+  list-style: none;
+}
+
+/* line 186, app/scss/components/navigation.scss */
+.nagivation__menu-item {
+  display: inline-block;
+  margin-right: 15px;
+  margin-left: 5px;
+  font-weight: bolder;
+  color: #fff;
+  line-height: 30px;
+  cursor: pointer;
+  transition: color 0.3s ease-out;
+}
+/* line 201, app/scss/components/navigation.scss */
+.nagivation__menu-item:hover {
+  color: #000;
+  transition: color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+}
+
+/* line 208, app/scss/components/navigation.scss */
+.nagivation__menu-item-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+}
+/* line 214, app/scss/components/navigation.scss */
+.nagivation__menu-item-link:hover {
+  color: #000;
+  transition: color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+}
+
+/* line 222, app/scss/components/navigation.scss */
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 230, app/scss/components/navigation.scss */
+.svg circle {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+/* line 1, app/scss/modules/sections.scss */
+.section {
+  position: relative;
+  height: 100%;
+  height: 100vh;
+  background: #fcfcfc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 14, app/scss/modules/sections.scss */
+.section__deck {
+  position: absolute;
+  color: #fff;
+  font-size: 18px;
+}
+/* line 22, app/scss/modules/sections.scss */
+.section__headline {
+  position: absolute;
+  color: #fff;
+  font-family: "Lobster", cursive;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 13px rgba(44, 44, 44, 0.3);
+}
+/* line 33, app/scss/modules/sections.scss */
+.section__decoration {
+  position: absolute;
+  z-index: -1;
+}
+
+/* line 5, app/scss/modules/intro.scss */
+.section#intro {
+  background-image: url(asset-path('casa-horizontes/sections/intro.jpg'));
+}
+/* line 8, app/scss/modules/intro.scss */
+.section#intro .section__deck {
+  /* Position */
+  left: 220px;
+  top: 240px;
+  /* Box Model */
+  width: 300px;
+  animation: fadeslide 0.8s 1s ease-out backwards;
+  -webkit-animation: fadeslide 0.8s 1s ease-out backwards;
+}
+/* line 20, app/scss/modules/intro.scss */
+.section#intro .section__decoration {
+  /* Position */
+  left: 0px;
+  top: 0;
+  /* Box Model */
+  height: 100vh;
+  width: 546px;
+  /* Visual */
+  background-image: url(asset-path('casa-horizontes/decorations/intro.png'));
+  background-repeat: no-repeat;
+  animation: slide 0.6s 0.6s ease-out backwards;
+  -webkit-animation: slide 0.6s 0.6s ease-out backwards;
+}
+@-webkit-keyframes slide {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateX(-50px);
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translateX(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+  }
+}
+@keyframes slide {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+    -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+  }
+}
+/* line 70, app/scss/modules/intro.scss */
+.section#intro .section__headline {
+  left: 220px;
+  top: 120px;
+  width: 350px;
+  font-size: 36px;
+  font-weight: lighter;
+  line-height: 1.15;
+  text-shadow: 1px 1px 13px rgba(55, 55, 55, 0.6);
+  animation: fadeslide 0.9s 0.8s ease-out backwards;
+  -webkit-animation: fadeslide 0.9s 0.8s ease-out backwards;
+}
+@-webkit-keyframes fadeslide {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeslide {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+}
+/* line 1, app/scss/modules/realismo.scss */
+#realismo_gallery {
+  position: absolute;
+  bottom: 30px;
+  left: 30%;
+  cursor: pointer;
+}
+/* line 6, app/scss/modules/realismo.scss */
+#realismo_gallery:hover {
+  opacity: 0.9;
+}
+
+/* line 14, app/scss/modules/realismo.scss */
+.section#realismo {
+  background-image: url(../images/sections/realismo.jpg);
+}
+/* line 17, app/scss/modules/realismo.scss */
+.section#realismo .section__deck {
+  position: absolute;
+  bottom: 10px;
+  left: 800px;
+  width: 430px;
+  text-align: right;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 17, app/scss/modules/realismo.scss */
+  .section#realismo .section__deck {
+    left: 570px;
+    bottom: 0;
+  }
+}
+/* line 32, app/scss/modules/realismo.scss */
+.section#realismo .section__decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  height: 377px;
+  margin: auto;
+  width: 100%;
+  background-image: url(../images/decorations/realismo.png);
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 32, app/scss/modules/realismo.scss */
+  .section#realismo .section__decoration {
+    background-position: -100px 0;
+  }
+}
+/* line 49, app/scss/modules/realismo.scss */
+.section#realismo .section__decoration-map {
+  position: absolute;
+  bottom: 200px;
+  right: 10%;
+  height: 135px;
+  margin: auto;
+  width: 100px;
+  background-image: url(../images/decorations/colombia.png);
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 49, app/scss/modules/realismo.scss */
+  .section#realismo .section__decoration-map {
+    background-position: -100px 0;
+  }
+}
+/* line 67, app/scss/modules/realismo.scss */
+.section#realismo .section__headline {
+  position: absolute;
+  bottom: 190px;
+  left: 50px;
+  font-weight: lighter;
+}
+/* line 76, app/scss/modules/realismo.scss */
+.section#realismo .section__text-one {
+  display: block;
+  margin-left: 40px;
+  font-size: 49px;
+  line-height: 1;
+}
+/* line 85, app/scss/modules/realismo.scss */
+.section#realismo .section__text-two {
+  display: block;
+  font-size: 59px;
+  line-height: 1;
+}
+/* line 91, app/scss/modules/realismo.scss */
+.section#realismo .section__decoration-line-one {
+  position: absolute;
+  left: -90px;
+  bottom: -20px;
+  height: 3px;
+  width: 355px;
+  background-color: #fff;
+}
+/* line 101, app/scss/modules/realismo.scss */
+.section#realismo .section__decoration-line-two {
+  position: absolute;
+  left: 30px;
+  bottom: -30px;
+  height: 3px;
+  width: 280px;
+  background-color: #fff;
+}
+
+/* line 1, app/scss/modules/hospedaje.scss */
+#hospedaje_gallery {
+  position: absolute;
+  top: 65%;
+  right: 30px;
+  cursor: pointer;
+}
+/* line 6, app/scss/modules/hospedaje.scss */
+#hospedaje_gallery:hover {
+  opacity: 0.9;
+}
+
+/* line 14, app/scss/modules/hospedaje.scss */
+.section#hospedaje {
+  background-image: url(../images/sections/hospedaje.jpg);
+}
+/* line 17, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__deck {
+  position: absolute;
+  right: 40px;
+  top: 250px;
+  width: 270px;
+  color: #403b3e;
+  text-align: right;
+}
+/* line 28, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__decoration {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  height: 100vh;
+  width: 465px;
+  background-image: url(../images/decorations/hospedaje.png);
+  background-repeat: no-repeat;
+}
+/* line 41, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__decoration-map {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  height: 100px;
+  width: 100px;
+  background-image: url(../images/decorations/antioquia.png);
+  background-repeat: no-repeat;
+}
+/* line 54, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__headline {
+  position: absolute;
+  top: 90px;
+  right: 210px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+/* line 64, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__text-one {
+  display: block;
+  font-size: 52px;
+  line-height: 1;
+}
+/* line 72, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__text-two {
+  display: block;
+  margin-left: 90px;
+  font-size: 39px;
+  line-height: 1;
+}
+/* line 82, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__decoration-line-one {
+  position: absolute;
+  left: -12px;
+  top: -9px;
+  height: 3px;
+  width: 290px;
+  background-color: #fff;
+}
+/* line 92, app/scss/modules/hospedaje.scss */
+.section#hospedaje .section__decoration-line-two {
+  position: absolute;
+  left: -12px;
+  bottom: -12px;
+  height: 3px;
+  width: 290px;
+  background-color: #fff;
+}
+
+/* line 5, app/scss/modules/atardecer.scss */
+.section#atardecer {
+  background-image: url(../images/sections/atardecer.jpg);
+}
+/* line 8, app/scss/modules/atardecer.scss */
+.section#atardecer .section__deck {
+  position: absolute;
+  left: 600px;
+  bottom: 20px;
+  width: 500px;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 8, app/scss/modules/atardecer.scss */
+  .section#atardecer .section__deck {
+    left: 500px;
+  }
+}
+/* line 21, app/scss/modules/atardecer.scss */
+.section#atardecer .section__decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  background-image: url(../images/decorations/atardecer.png);
+  background-repeat: no-repeat;
+}
+/* line 33, app/scss/modules/atardecer.scss */
+.section#atardecer .section__headline {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+/* line 44, app/scss/modules/atardecer.scss */
+.section#atardecer .section__text-one {
+  display: block;
+  font-size: 46px;
+  line-height: 1.1;
+  width: 320px;
+}
+/* line 53, app/scss/modules/atardecer.scss */
+.section#atardecer .section__text-two {
+  position: absolute;
+  top: 105px;
+  left: 163px;
+  display: block;
+  font-size: 50px;
+  line-height: 1;
+}
+/* line 67, app/scss/modules/atardecer.scss */
+.section#atardecer .section__decoration-line-one {
+  position: absolute;
+  left: -140px;
+  top: -10px;
+  height: 3px;
+  width: 355px;
+  background-color: #fff;
+}
+/* line 78, app/scss/modules/atardecer.scss */
+.section#atardecer .section__decoration-line-two {
+  position: absolute;
+  left: 30px;
+  bottom: -17px;
+  height: 3px;
+  width: 280px;
+  background-color: #fff;
+}
+
+/* line 5, app/scss/modules/cocina.scss */
+.section#cocina {
+  background-image: url(../images/sections/cocina.jpg);
+}
+/* line 9, app/scss/modules/cocina.scss */
+.section#cocina .section__deck {
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
+  width: 280px;
+  color: #111111;
+  line-height: 1.3;
+}
+/* line 21, app/scss/modules/cocina.scss */
+.section#cocina .section__decoration {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 100vh;
+  width: 640px;
+  background-image: url(../images/decorations/cocina.png);
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+}
+/* line 34, app/scss/modules/cocina.scss */
+.section#cocina .section__headline {
+  position: absolute;
+  bottom: 170px;
+  left: 40px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+/* line 43, app/scss/modules/cocina.scss */
+.section#cocina .section__text-one {
+  display: block;
+  font-size: 45px;
+  line-height: 1.1;
+  width: 320px;
+}
+/* line 51, app/scss/modules/cocina.scss */
+.section#cocina .section__text-two {
+  display: block;
+  font-size: 48px;
+  line-height: 1;
+}
+/* line 60, app/scss/modules/cocina.scss */
+.section#cocina .section__decoration-line-one {
+  position: absolute;
+  left: -140px;
+  top: -10px;
+  height: 3px;
+  width: 355px;
+  background-color: #fff;
+}
+/* line 71, app/scss/modules/cocina.scss */
+.section#cocina .section__decoration-line-two {
+  position: absolute;
+  left: 30px;
+  bottom: -17px;
+  height: 3px;
+  width: 280px;
+  background-color: #fff;
+}
+/* line 82, app/scss/modules/cocina.scss */
+.section#cocina .section__chef {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  right: calc(40% - 522px);
+  height: 522px;
+  padding-top: 85px;
+  padding-left: 70px;
+  padding-right: 155px;
+  width: 450px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+  background: url(../images/decorations/chef.png);
+}
+/* line 103, app/scss/modules/cocina.scss */
+.section#cocina .section__link {
+  position: absolute;
+  left: 50px;
+  bottom: 320px;
+}
+
+/* line 5, app/scss/modules/invitados.scss */
+.section#invitados {
+  background-image: url(../images/sections/invitados.jpg);
+}
+/* line 8, app/scss/modules/invitados.scss */
+.section#invitados .section__guest {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+/* line 19, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-item {
+  display: inline-block;
+  width: 33%;
+}
+/* line 25, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-figure {
+  position: relative;
+  margin: 25px;
+}
+/* line 34, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+}
+/* line 41, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-svg path, .section#invitados .section__guest-svg polygon {
+  fill: rgba(255, 255, 255, 0.9);
+}
+/* line 44, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-svg #Capa_1 {
+  height: 270px;
+}
+/* line 47, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-svg #Capa_2 {
+  height: 270px;
+}
+/* line 50, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-svg #Capa_3 {
+  height: 270px;
+}
+/* line 55, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-caption {
+  position: absolute;
+  bottom: -190px;
+  left: 30px;
+  width: 100%;
+}
+/* line 63, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-text {
+  font-family: "Lato", sans-serif;
+  line-height: 1.3;
+  font-size: 16px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+/* line 72, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-text--one {
+  padding-top: 10px;
+  padding-right: 60px;
+}
+/* line 76, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-text--two {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+/* line 80, app/scss/modules/invitados.scss */
+.section#invitados .section__guest-text--three {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+/* line 87, app/scss/modules/invitados.scss */
+.section#invitados .section__headline {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  color: #000;
+  font-size: 48px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  /* line 87, app/scss/modules/invitados.scss */
+  .section#invitados .section__headline {
+    font-size: 36px;
+  }
+}
+
+/* line 5, app/scss/modules/reserva.scss */
+.section#reserva {
+  background-image: url(../images/sections/reserva.jpg);
+}
+/* line 8, app/scss/modules/reserva.scss */
+.section#reserva .section__decoration {
+  background-image: url(../images/decorations/reserva.jpg);
+}
+/* line 12, app/scss/modules/reserva.scss */
+.section#reserva .section-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50px);
+  top: 30%;
+  height: 40vh;
+}
+/* line 22, app/scss/modules/reserva.scss */
+.section#reserva .section-logo__link {
+  height: 100%;
+}
+/* line 26, app/scss/modules/reserva.scss */
+.section#reserva .section-logo__image {
+  height: 100%;
+}
+/* line 31, app/scss/modules/reserva.scss */
+.section#reserva .section__contact {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 75%;
+  text-align: center;
+}
+/* line 41, app/scss/modules/reserva.scss */
+.section#reserva .section__contact-headline {
+  font-size: 36px;
+  margin: 0;
+}
+/* line 46, app/scss/modules/reserva.scss */
+.section#reserva .section__contact-link {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: #333333;
+}
+/* line 53, app/scss/modules/reserva.scss */
+.section#reserva .section__contact-phone {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: #333333;
+}
+/* line 60, app/scss/modules/reserva.scss */
+.section#reserva .section__contact-text {
+  margin-top: 0;
+}
+/* line 64, app/scss/modules/reserva.scss */
+.section#reserva .section__headline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 7%;
+  max-width: 800px;
+  color: #000;
+  font-size: 38px;
+  font-size: 2.7vw;
+  font-weight: lighter;
+  text-align: center;
+}
+/* line 84, app/scss/modules/reserva.scss */
+.section#reserva .section__reserva {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 90%;
+}
+/* line 92, app/scss/modules/reserva.scss */
+.section#reserva .section__reserva-link {
+  display: inline-block;
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #3cbf43;
+  border: 1px solid #309835;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+/* line 109, app/scss/modules/reserva.scss */
+.section#reserva .section__reserva-link:hover {
+  background-color: #309835;
+  border: 1px solid #3cbf43;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}

@@ -1,142 +1,91 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Casa Hotel Horizontes</title>
-    <meta name="MobileOptimized" content="320">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="components/normalize.css/normalize.css">
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- Plugins-->
-    <link rel="stylesheet" href="components/pagepiling.js/jquery.pagepiling.css">
-    <link rel="stylesheet" href="components/lightgallery/light-gallery/css/lightGallery.css">
-  </head>
-  <body>
-    <nav class="navigation">
-      <div class="navigation__menu">
-        <div class="navigation__menu-btn"><i class="navigation__menu-icon"></i><span class="navigation__menu-text">Menu</span></div>
-        <ul class="nagivation__menu-list">
-          <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Inicio</a></li>
-          <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Acerca de Horizontes</a></li>
-          <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Terminos y Condiciones</a></li>
-          <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Preguntas Frecuentes</a></li>
-          <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Politica de Cancelacion</a></li>
-          <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Personal del Hotel</a></li>
-        </ul>
-      </div>
-      <div class="navigation__state">
-        <p class="navigation__state-text">Intro</p>
-      </div>
-      <div class="navigation__circles">
-        <ul id="myMenu" class="navigation__circles-list">
-          <li data-menuanchor="firstPage" class="navigation__circles-item active"><a href="#firstPage" class="navigation__circles-link"></a></li>
-          <li data-menuanchor="secondPage" class="navigation__circles-item"><a href="#secondPage" class="navigation__circles-link"></a></li>
-          <li data-menuanchor="thirdPage" class="navigation__circles-item"><a href="#thirdPage" class="navigation__circles-link"></a></li>
-          <li data-menuanchor="fourthPage" class="navigation__circles-item"><a href="#fourthPage" class="navigation__circles-link"></a></li>
-          <li data-menuanchor="fivethPage" class="navigation__circles-item"><a href="#fivethPage" class="navigation__circles-link"></a></li>
-          <li data-menuanchor="sixthPage" class="navigation__circles-item"><a href="#sixthPage" class="navigation__circles-link"></a></li>
-          <li data-menuanchor="seventhPage" class="navigation__circles-item"><a href="#seventhPage" class="navigation__circles-link"></a></li>
-        </ul>
-      </div>
-      <div class="navigation__social"><span class="navigation__social-text">Compartir</span>
-        <ul class="navigation__social-list">
-          <li class="navigation__social-item"><a href="http://twitter.com" class="navigation__social-link navigation__social-link--twitter"></a></li>
-          <li class="navigation__social-item"><a href="http://facebook.com" class="navigation__social-link navigation__social-link--facebook"></a></li>
-        </ul>
-      </div>
-    </nav>
-    <div id="pagepiling">
-      <div id="intro" class="section">
-        <div class="section__decoration"></div>
-        <h1 class="main_headline"><a href="http://casahorizontes.com" class="main_headline__link"><img src="images/brand/main_logo.png" alt="Hotel Casa Horizontes" class="main_headline__image"></a></h1>
-        <h2 class="section__headline"><span class="section__text-one">Hotel Boutique en el Paraiso Colombiano</span></h2>
-        <p class="section__deck">El único&nbsp;<strong>hotel de lujo&nbsp;</strong>en Colombia, ubicado dentro de un pueblo privado.</p>
-        <div class="reservation-box">
-          <form class="reservation-box__form">
-            <fieldset class="reservation-box__fieldset">
-              <label for="reservation-arrive" class="reservation-box__label">Llegada</label>
-              <input id="reservation-arrive" type="date" class="reservation-box__input">
-            </fieldset>
-            <fieldset class="reservation-box__fieldset">
-              <label for="reservation-leave" class="reservation-box__label">Salida</label>
-              <input id="reservation-leave" type="date" class="reservation-box__input">
-            </fieldset>
-            <fieldset class="reservation-box__fieldset">
-              <input type="submit" value="Reservar Mi Experiencia" class="reservation-box__submit">
-            </fieldset>
-          </form>
-        </div>
-      </div>
-      <div id="realismo" class="section">
-        <div class="section__decoration"></div>
-        <div class="section__decoration-map"></div>
-        <h2 class="section__headline"><span class="section__text-one">Realismo</span><span class="section__text-two">Mágico</span><span class="section__decoration-line-one"></span><span class="section__decoration-line-two"></span></h2>
-        <p class="section__deck">Casa Horizontes se encuentra&nbsp;<strong>ubicado dentro de "Cauca Viejo",&nbsp;</strong>el primer pueblo tradicional dentro de un complejo privado en el&nbsp;<strong>Suroeste Antioqueño,&nbsp;</strong>a orillas del río Cauca cuenta con calles empedradas,&nbsp;<strong>parque principal,&nbsp;</strong>iglesia,<br>casa cural y senderos ecológicos.</p><img id="realismo_gallery" src="images/icons/realismo_gallery.png" alt="">
-      </div>
-      <div id="hospedaje" class="section">
-        <div class="section__decoration"></div>
-        <div class="section__decoration-map"></div>
-        <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Hospedaje</span><span class="section__text-two">Centenario</span><span class="section__decoration-line-two"></span></h2>
-        <p class="section__deck">Con solo&nbsp;<strong>5 habitaciones</strong><br>exclusivas que plasman la arquitectura colonial, usted tendra la garantia de una<br><strong>experiencia privada&nbsp;</strong>en<br>contacto directo con la<br>naturaleza.</p><img id="hospedaje_gallery" src="images/icons/hospedaje_gallery.png" alt="">
-      </div>
-      <div id="atardecer" class="section">
-        <div class="section__decoration"></div>
-        <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Atardecer,<br>con aroma a café silvestre</span><span class="section__text-two">Colombiano</span><span class="section__decoration-line-two"></span></h2>
-        <p class="section__deck">Relájate en nuestra&nbsp;<strong>exlusiva zona húmeda&nbsp;</strong>disfrutando<br>un&nbsp;<strong>exquisito vino&nbsp;</strong>o simplemente disfruta de<br>nuestros jardines zen con nuestro mágico<br>café orgánico preparado en casa.</p>
-      </div>
-      <div id="cocina" class="section">
-        <div class="section__decoration"></div>
-        <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Cocina mundial&nbsp;</span><span class="section__text-two">con sabor local</span><span class="section__decoration-line-two"></span></h2>
-        <p class="section__deck">Para paladares exquisitos, disfruta de nuestra&nbsp;<strong>Cocina Fusión</strong>, de la mano de nuestro Talentoso Chef, quien te entregará&nbsp;<strong>sabores internacionales&nbsp;</strong>con toques<br>exóticos de nuestro país.</p>
-        <p class="section__chef">Hola! Soy Cesar Benavides,&nbsp;<strong>chef principal&nbsp;</strong><br>de la Casa Horizontes; estudié cocina en el<br><strong>Instituto Argentino de Gastronomía&nbsp;</strong>y desde allí he venido trabajando en diferentes restaurantes de Sudamérica.<br><br>Hoy soy el encargado de&nbsp;<strong>diseñar los platos&nbsp;</strong>que llevarán tus&nbsp;<strong>sentidos&nbsp;</strong>a un lugar que jamás habías conocido; te espero prontamente.</p><a href="https://www.pagomio.com/" target="_blank" class="section__link"><img src="images/icons/reservar_mesa.png" alt=""></a>
-      </div>
-      <div id="invitados" class="section">
-        <!--.section__decoration-->
-        <h2 class="section__headline"><span class="section__text-one">¿Qué dicen nuestros invitados?</span></h2>
-        <div class="section__guest">
-          <ul class="section__guest-list">
-            <li class="section__guest-item">
-              <figure class="section__guest-figure"><img src="images/guests/1.jpg" alt="" class="section__guest-image">
-                <figcaption class="section__guest-caption">
-                  <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 216 310" enable-background="new 0 0 216 310" xml:space="preserve"> <polygon fill-rule="evenodd" clip-rule="evenodd" points="0,0 216,20 206,290 10,310 "/> </svg> </div>
-                  <p class="section__guest-text section__guest-text--one"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod.</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="section__guest-item">
-              <figure class="section__guest-figure"><img src="images/guests/2.jpg" alt="" class="section__guest-image">
-                <figcaption class="section__guest-caption">
-                  <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 256 290" enable-background="new 0 0 256 290" xml:space="preserve"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0,20L236,0l20,290H40L0,20z"/> </svg> </div>
-                  <p class="section__guest-text section__guest-text--two"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod. Ut vel massa maximus, elementum dui eu, fringilla mi.</p>
-                </figcaption>
-              </figure>
-            </li>
-            <li class="section__guest-item">
-              <figure class="section__guest-figure"><img src="images/guests/3.jpg" alt="" class="section__guest-image">
-                <figcaption class="section__guest-caption">
-                  <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 235.5 292" enable-background="new 0 0 235.5 292" xml:space="preserve"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21,0l214,12l1,280L0,262L21,0z"/> </svg> </div>
-                  <p class="section__guest-text section__guest-text--three"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod. Ut vel massa maximus, elementum dui eu, fringilla mi.</p>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="reserva" class="section">
-        <h2 class="section__headline"><span class="section__text-one">Disfruta ya del primer Hotel Boutique dentro de un pueblo privado Colombiano.</span></h2>
-        <h3 class="section-logo"><a href="http://casahorizontes.com" class="section-logo__link"><img src="images/brand/main_logo.png" alt="Hotel Casa Horizontes" class="section-logo__image"></a></h3>
-        <div class="section__contact">
-          <h4 class="section__contact-headline">Contactanos</h4>
-          <p class="section__contact-text"><a href="mailto:info@casahorizontes.com" class="section__contact-link">info@casahorizontes.com</a><br><a href="tel:+573185171602" class="section__contact-phone">Tel +57 318 5171602</a></p>
-        </div>
-        <div class="section__reserva"><a href="" class="section__reserva-link">Reservar Mi Experiencia</a></div>
-      </div>
+<div id="pagepiling">
+  <div id="intro" class="section">
+    <div class="section__decoration"></div>
+    <h1 class="main_headline"><a href="http://casahorizontes.com" class="main_headline__link"><img src="<%= asset_path('casa-horizontes/brand/main_logo.png') %>" alt="Hotel Casa Horizontes" class="main_headline__image"></a></h1>
+    <h2 class="section__headline"><span class="section__text-one">Hotel Boutique en el Paraiso Colombiano</span></h2>
+    <p class="section__deck">El único&nbsp;<strong>hotel de lujo&nbsp;</strong>en Colombia, ubicado dentro de un pueblo privado.</p>
+    <div class="reservation-box">
+      <form class="reservation-box__form">
+        <fieldset class="reservation-box__fieldset">
+          <label for="reservation-arrive" class="reservation-box__label">Llegada</label>
+          <input id="reservation-arrive" type="date" class="reservation-box__input">
+        </fieldset>
+        <fieldset class="reservation-box__fieldset">
+          <label for="reservation-leave" class="reservation-box__label">Salida</label>
+          <input id="reservation-leave" type="date" class="reservation-box__input">
+        </fieldset>
+        <fieldset class="reservation-box__fieldset">
+          <input type="submit" value="Reservar Mi Experiencia" class="reservation-box__submit">
+        </fieldset>
+      </form>
     </div>
-    <script src="components/jquery/dist/jquery.min.js"></script>
-    <script src="components/pagepiling.js/jquery.pagepiling.min.js"></script>
-    <script src="components/lightgallery/light-gallery/js/lightGallery.min.js"></script>
-    <script src="scripts/main.js"></script>
-  </body>
-</html>
+  </div>
+  <div id="realismo" class="section">
+    <div class="section__decoration"></div>
+    <div class="section__decoration-map"></div>
+    <h2 class="section__headline"><span class="section__text-one">Realismo</span><span class="section__text-two">Mágico</span><span class="section__decoration-line-one"></span><span class="section__decoration-line-two"></span></h2>
+    <p class="section__deck">Casa Horizontes se encuentra&nbsp;<strong>ubicado dentro de "Cauca Viejo",&nbsp;</strong>el primer pueblo tradicional dentro de un complejo privado en el&nbsp;<strong>Suroeste Antioqueño,&nbsp;</strong>a orillas del río Cauca cuenta con calles empedradas,&nbsp;<strong>parque principal,&nbsp;</strong>iglesia,<br>casa cural y senderos ecológicos.</p><img id="realismo_gallery" src="<%= asset_path('casa-horizontes/images/icons/realismo_gallery.png') %>" alt="">
+  </div>
+  <div id="hospedaje" class="section">
+    <div class="section__decoration"></div>
+    <div class="section__decoration-map"></div>
+    <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Hospedaje</span><span class="section__text-two">Centenario</span><span class="section__decoration-line-two"></span></h2>
+    <p class="section__deck">Con solo&nbsp;<strong>5 habitaciones</strong><br>exclusivas que plasman la arquitectura colonial, usted tendra la garantia de una<br><strong>experiencia privada&nbsp;</strong>en<br>contacto directo con la<br>naturaleza.</p><img id="hospedaje_gallery" src="<%= asset_path('casa-horizontes/images/icons/hospedaje_gallery.png') %>" alt="">
+  </div>
+  <div id="atardecer" class="section">
+    <div class="section__decoration"></div>
+    <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Atardecer,<br>con aroma a café silvestre</span><span class="section__text-two">Colombiano</span><span class="section__decoration-line-two"></span></h2>
+    <p class="section__deck">Relájate en nuestra&nbsp;<strong>exlusiva zona húmeda&nbsp;</strong>disfrutando<br>un&nbsp;<strong>exquisito vino&nbsp;</strong>o simplemente disfruta de<br>nuestros jardines zen con nuestro mágico<br>café orgánico preparado en casa.</p>
+  </div>
+  <div id="cocina" class="section">
+    <div class="section__decoration"></div>
+    <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Cocina mundial&nbsp;</span><span class="section__text-two">con sabor local</span><span class="section__decoration-line-two"></span></h2>
+    <p class="section__deck">Para paladares exquisitos, disfruta de nuestra&nbsp;<strong>Cocina Fusión</strong>, de la mano de nuestro Talentoso Chef, quien te entregará&nbsp;<strong>sabores internacionales&nbsp;</strong>con toques<br>exóticos de nuestro país.</p>
+    <p class="section__chef">Hola! Soy Cesar Benavides,&nbsp;<strong>chef principal&nbsp;</strong><br>de la Casa Horizontes; estudié cocina en el<br><strong>Instituto Argentino de Gastronomía&nbsp;</strong>y desde allí he venido trabajando en diferentes restaurantes de Sudamérica.<br><br>Hoy soy el encargado de&nbsp;<strong>diseñar los platos&nbsp;</strong>que llevarán tus&nbsp;<strong>sentidos&nbsp;</strong>a un lugar que jamás habías conocido; te espero prontamente.</p><a href="https://www.pagomio.com/" target="_blank" class="section__link"><img src="<%= asset_path('casa-horizontes/images/icons/reservar_mesa.png') %>" alt=""></a>
+  </div>
+  <div id="invitados" class="section">
+    <!--.section__decoration-->
+    <h2 class="section__headline"><span class="section__text-one">¿Qué dicen nuestros invitados?</span></h2>
+    <div class="section__guest">
+      <ul class="section__guest-list">
+        <li class="section__guest-item">
+          <figure class="section__guest-figure"><img src="<%= asset_path('casa-horizontes/images/guests/1.jpg') %>" alt="" class="section__guest-image">
+            <figcaption class="section__guest-caption">
+              <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 216 310" enable-background="new 0 0 216 310" xml:space="preserve"> <polygon fill-rule="evenodd" clip-rule="evenodd" points="0,0 216,20 206,290 10,310 "/> </svg> </div>
+              <p class="section__guest-text section__guest-text--one"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod.</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="section__guest-item">
+          <figure class="section__guest-figure"><img src="<%= asset_path('casa-horizontes/images/guests/2.jpg') %>" alt="" class="section__guest-image">
+            <figcaption class="section__guest-caption">
+              <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 256 290" enable-background="new 0 0 256 290" xml:space="preserve"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0,20L236,0l20,290H40L0,20z"/> </svg> </div>
+              <p class="section__guest-text section__guest-text--two"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod. Ut vel massa maximus, elementum dui eu, fringilla mi.</p>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="section__guest-item">
+          <figure class="section__guest-figure"><img src="<%= asset_path('casa-horizontes/images/guests/3.jpg') %>" alt="" class="section__guest-image">
+            <figcaption class="section__guest-caption">
+              <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 235.5 292" enable-background="new 0 0 235.5 292" xml:space="preserve"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21,0l214,12l1,280L0,262L21,0z"/> </svg> </div>
+              <p class="section__guest-text section__guest-text--three"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod. Ut vel massa maximus, elementum dui eu, fringilla mi.</p>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="reserva" class="section">
+    <h2 class="section__headline"><span class="section__text-one">Disfruta ya del primer Hotel Boutique dentro de un pueblo privado Colombiano.</span></h2>
+    <h3 class="section-logo"><a href="http://casahorizontes.com" class="section-logo__link"><img src="<%= asset_path('casa-horizontes/images/brand/main_logo.png') %>" alt="Hotel Casa Horizontes" class="section-logo__image"></a></h3>
+    <div class="section__contact">
+      <h4 class="section__contact-headline">Contactanos</h4>
+      <p class="section__contact-text"><a href="mailto:info@casahorizontes.com" class="section__contact-link">info@casahorizontes.com</a><br><a href="tel:+573185171602" class="section__contact-phone">Tel +57 318 5171602</a></p>
+    </div>
+    <div class="section__reserva"><a href="" class="section__reserva-link">Reservar Mi Experiencia</a></div>
+  </div>
+</div>
+
+<script src="components/pagepiling.js/jquery.pagepiling.min.js"></script>
+<script src="components/lightgallery/light-gallery/js/lightGallery.min.js"></script>
+<script src="scripts/main.js"></script>
