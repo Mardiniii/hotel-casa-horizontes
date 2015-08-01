@@ -233,6 +233,12 @@ body {
 .navigation__social-link--facebook {
   background-image: url(asset-path('casa-horizontes/icons/facebook-icon.png'));
 }
+.navigation__social-link--instagram {
+  background-image: url(asset-path('casa-horizontes/icons/instagram-icon.png'));
+}
+.navigation__social-link--tripadvisor {
+  background-image: url(asset-path('casa-horizontes/icons/tripadvisor-icon.png'));
+}
 /* line 41, app/scss/components/social.scss */
 .navigation__social-text {
   font-size: 16px;
