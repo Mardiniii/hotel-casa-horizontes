@@ -18,13 +18,15 @@
 	<nav class="navigation">
     <div class="navigation__menu">
       <div class="navigation__menu-btn"><i class="navigation__menu-icon"></i><span class="navigation__menu-text">Menu</span></div>
-      <ul class="nagivation__menu-list">
-        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Inicio</a></li>
+      <ul class="nagivation__menu-list">        
+        <li class="nagivation__menu-item"><%= link_to "Inicio", root_path, class: "nagivation__menu-item-link" %></li>
+        <li class="nagivation__menu-item"><%= link_to "Planes y Servicios", "#ModalPrice", "data-toggle" => "modal", class: "nagivation__menu-item-link" %></li>
+        <!-- <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Inicio</a></li>
         <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Acerca de Horizontes</a></li>
         <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Terminos y Condiciones</a></li>
         <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Preguntas Frecuentes</a></li>
         <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Politica de Cancelacion</a></li>
-        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Personal del Hotel</a></li>
+        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Personal del Hotel</a></li> -->
       </ul>
     </div>
     <div class="navigation__state">
@@ -45,7 +47,6 @@
       <ul class="navigation__social-list">
         <!-- Twitter desactived -->
         <!-- <li class="navigation__social-item"><a target="_blank" href="http://twitter.com" class="navigation__social-link navigation__social-link--twitter"></a></li> -->
-        <li><%= link_to "Planes Y", "#ModalPrice", "data-toggle" => "modal" %></li>
         <li class="navigation__social-item"><a target="_blank" href="https://www.facebook.com/casahorizontes1?ref=hl" class="navigation__social-link navigation__social-link--facebook"></a></li>
         <li class="navigation__social-item"><a target="_blank" href="https://i.instagram.com/hotelcasahorizontes/" class="navigation__social-link navigation__social-link--instagram"></a></li>
         <li class="navigation__social-item"><a target="_blank" href="http://www.tripadvisor.es/8360715?m=19905" class="navigation__social-link navigation__social-link--tripadvisor"></a></li>
