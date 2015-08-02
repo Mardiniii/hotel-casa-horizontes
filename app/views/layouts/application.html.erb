@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HotelCasaHorizontes</title>
+  <title>Casa Hotel Horizontes</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
-  <link href="http://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+
+  <meta charset="utf-8">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+  
 </head>
 <body id="page-top">
-	<nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand page-scroll" href="#page-top">
-          <img src="http://i592.photobucket.com/albums/tt5/Mardini03/logo-con-crop.png" class="img-responsive" alt="">
-        </a>
-      </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <% if current_page?(root_path)%>
-            <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-            <li><a class="page-scroll" href="#resume_about_us">Sobre nosotros</a></li>
-            <li><a class="page-scroll" href="#temple">La Casa</a></li>
-            <li><a class="page-scroll" href="#contact">Contáctanos</a></li>            
-            <li><a class="page-scroll" href="#experiences_intro">Ubicación</a></li>
-          <% else %>
-            <li class="hidden"><a class="page-scroll" href="#page-top"></a></li>
-            <li><a class="page-scroll" href="#resume_about_us">About Us</a></li>
-            <li><a class="page-scroll" href="#temple">The Temple</a></li>
-            <li><a class="page-scroll" href="#experiences_intro">Experiences</a></li>
-            <li><a class="page-scroll" href="#contact">Contact Us</a></li>
-          <% end %>          
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
+	<nav class="navigation">
+    <div class="navigation__menu">
+      <div class="navigation__menu-btn"><i class="navigation__menu-icon"></i><span class="navigation__menu-text">Menu</span></div>
+      <ul class="nagivation__menu-list">        
+        <li class="nagivation__menu-item"><%= link_to "Inicio", root_path, class: "nagivation__menu-item-link" %></li>
+        <li class="nagivation__menu-item"><%= link_to "Planes y Servicios", "#ModalPrice", "data-toggle" => "modal", class: "nagivation__menu-item-link" %></li>
+        <!-- <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Inicio</a></li>
+        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Acerca de Horizontes</a></li>
+        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Terminos y Condiciones</a></li>
+        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Preguntas Frecuentes</a></li>
+        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Politica de Cancelacion</a></li>
+        <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Personal del Hotel</a></li> -->
+      </ul>
     </div>
-    <!-- /.container -->
-	</nav>
+    <div class="navigation__state">
+      <p class="navigation__state-text">Intro</p>
+    </div>
+    <div class="navigation__circles">
+      <ul id="myMenu" class="navigation__circles-list">
+        <li data-menuanchor="firstPage" class="navigation__circles-item active"><a href="#firstPage" class="navigation__circles-link"></a></li>
+        <li data-menuanchor="secondPage" class="navigation__circles-item"><a href="#secondPage" class="navigation__circles-link"></a></li>
+        <li data-menuanchor="thirdPage" class="navigation__circles-item"><a href="#thirdPage" class="navigation__circles-link"></a></li>
+        <li data-menuanchor="fourthPage" class="navigation__circles-item"><a href="#fourthPage" class="navigation__circles-link"></a></li>
+        <li data-menuanchor="fivethPage" class="navigation__circles-item"><a href="#fivethPage" class="navigation__circles-link"></a></li>
+        <li data-menuanchor="sixthPage" class="navigation__circles-item"><a href="#sixthPage" class="navigation__circles-link"></a></li>
+        <li data-menuanchor="seventhPage" class="navigation__circles-item"><a href="#seventhPage" class="navigation__circles-link"></a></li>
+      </ul>
+    </div>
+    <div class="navigation__social"><span class="navigation__social-text">Compartir</span>
+      <ul class="navigation__social-list">
+        <!-- Twitter desactived -->
+        <!-- <li class="navigation__social-item"><a target="_blank" href="http://twitter.com" class="navigation__social-link navigation__social-link--twitter"></a></li> -->
+        <li class="navigation__social-item"><a target="_blank" href="https://www.facebook.com/casahorizontes1?ref=hl" class="navigation__social-link navigation__social-link--facebook"></a></li>
+        <li class="navigation__social-item"><a target="_blank" href="https://i.instagram.com/hotelcasahorizontes/" class="navigation__social-link navigation__social-link--instagram"></a></li>
+        <li class="navigation__social-item"><a target="_blank" href="http://www.tripadvisor.es/8360715?m=19905" class="navigation__social-link navigation__social-link--tripadvisor"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <%= render 'pages/price_modal' %>
+    
 	<%= yield %>
 </body>
 </html>
