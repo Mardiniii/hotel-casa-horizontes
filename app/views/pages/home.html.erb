@@ -42,7 +42,11 @@
     <div class="section__decoration"></div>
     <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one">Cocina mundial&nbsp;</span><span class="section__text-two">con sabor local</span><span class="section__decoration-line-two"></span></h2>
     <p class="section__deck">Para paladares exquisitos, disfruta de nuestra&nbsp;<strong>Cocina Fusión</strong>, de la mano de nuestro Talentoso Chef, quien te entregará&nbsp;<strong>sabores internacionales&nbsp;</strong>con toques<br>exóticos de nuestro país.</p>
-    <p class="section__chef">Hola! Soy Cesar Benavides,&nbsp;<strong>chef principal&nbsp;</strong><br>de la Casa Horizontes; estudié cocina en el<br><strong>Instituto Argentino de Gastronomía&nbsp;</strong>y desde allí he venido trabajando en diferentes restaurantes de Sudamérica.<br><br>Hoy soy el encargado de&nbsp;<strong>diseñar los platos&nbsp;</strong>que llevarán tus&nbsp;<strong>sentidos&nbsp;</strong>a un lugar que jamás habías conocido; te espero prontamente.</p><a href="https://www.pagomio.com/" target="_blank" class="section__link"><img src="<%= asset_path('casa-horizontes/icons/reservar_mesa.png') %>" alt=""></a>
+    <p class="section__chef">Hola! Soy Cesar Benavides,&nbsp;<strong>chef principal&nbsp;</strong><br>de la Casa Horizontes; estudié cocina en el<br><strong>Instituto Argentino de Gastronomía&nbsp;</strong>y desde allí he venido trabajando en diferentes restaurantes de Sudamérica.<br><br>Hoy soy el encargado de&nbsp;<strong>diseñar los platos&nbsp;</strong>que llevarán tus&nbsp;<strong>sentidos&nbsp;</strong>a un lugar que jamás habías conocido; te espero prontamente.</p>      
+    <%= link_to "#ModalPrice", "data-toggle" => "modal", class: "section__link" do %> 
+      <img src="<%= asset_path('casa-horizontes/icons/reservar_mesa.png') %>" alt="">
+    <% end %>
+    <!-- <a href="https://www.pagomio.com/" target="_blank" class="section__link"> -->  
   </div>
   <div id="invitados" class="section">
     <!--.section__decoration-->
@@ -53,7 +57,7 @@
           <figure class="section__guest-figure"><img src="<%= asset_path('casa-horizontes/guests/1.jpg') %>" alt="" class="section__guest-image">
             <figcaption class="section__guest-caption">
               <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 216 310" enable-background="new 0 0 216 310" xml:space="preserve"> <polygon fill-rule="evenodd" clip-rule="evenodd" points="0,0 216,20 206,290 10,310 "/> </svg> </div>
-              <p class="section__guest-text section__guest-text--one"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod.</p>
+              <p class="section__guest-text section__guest-text--one"><strong>Lucho:&nbsp;</strong>Es una perfecta combinación entre el espacio ideal de descanso, un diseño exquisito que enamora, privacidad que supera cualquier lujo, calidez humana por parte de todo el equipo. Casa Horizontes es algo así como un sueño!</p>
             </figcaption>
           </figure>
         </li>
@@ -61,7 +65,7 @@
           <figure class="section__guest-figure"><img src="<%= asset_path('casa-horizontes/guests/2.jpg') %>" alt="" class="section__guest-image">
             <figcaption class="section__guest-caption">
               <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 256 290" enable-background="new 0 0 256 290" xml:space="preserve"> <path fill-rule="evenodd" clip-rule="evenodd" d="M0,20L236,0l20,290H40L0,20z"/> </svg> </div>
-              <p class="section__guest-text section__guest-text--two"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod. Ut vel massa maximus, elementum dui eu, fringilla mi.</p>
+              <p class="section__guest-text section__guest-text--two"><strong>Catalina:&nbsp;</strong>No hace falta decir que nos enamoramos nos encanta el lugar, los anfitriones y el ambiente. lleva mucho tiempo a describir la singularidad del lugar, la decoración de las habitaciones, zonas comunes y su pintoresco café donde disfrutamos de un delicioso aperitivo.</p>
             </figcaption>
           </figure>
         </li>
@@ -69,7 +73,7 @@
           <figure class="section__guest-figure"><img src="<%= asset_path('casa-horizontes/guests/3.jpg') %>" alt="" class="section__guest-image">
             <figcaption class="section__guest-caption">
               <div class="section__guest-svg"><?xml version="1.0" encoding="utf-8"?> <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --> <svg version="1.1" id="Capa_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 235.5 292" enable-background="new 0 0 235.5 292" xml:space="preserve"> <path fill-rule="evenodd" clip-rule="evenodd" d="M21,0l214,12l1,280L0,262L21,0z"/> </svg> </div>
-              <p class="section__guest-text section__guest-text--three"><strong>Lorem ipsum:&nbsp;</strong>dolor sit amet, consectetur adipiscing elit. Vivamus risus quam, maximus a ante ut, finibus ultricies dui. Fusce eu facilisis lorem. Ut fermentum in massa eget euismod. Ut vel massa maximus, elementum dui eu, fringilla mi.</p>
+              <p class="section__guest-text section__guest-text--three"><strong>Enrique:&nbsp;</strong>Es tranquilo, hermoso, un lugar para sentarse junto a la piscina en una hamaca y leer García Márquez. Hay unos cuantos hoteles todos pequeños. Casa horizontes es el mejor. Chef maravilloso, grandes margaritas hechas con mango fresco local. Junto a la piscina. Increíblemente buenos anfitriones.</p>
             </figcaption>
           </figure>
         </li>
@@ -83,7 +87,7 @@
       <h4 class="section__contact-headline">Contactanos</h4>
       <p class="section__contact-text"><a href="mailto:info@casahorizontes.com" class="section__contact-link">info@casahorizontes.com</a><br><a href="tel:+573185171602" class="section__contact-phone">Tel +57 318 5171602</a></p>
     </div>
-    <div class="section__reserva"><a href="" class="section__reserva-link">Reservar Mi Experiencia</a></div>
+    <div class="section__reserva"><%= link_to "Reservar Mi Experiencia", "#ModalPrice", "data-toggle" => "modal", class: "section__reserva-link" %></div>
   </div>
 </div>
 
