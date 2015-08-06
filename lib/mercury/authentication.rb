@@ -1,8 +1,11 @@
 module Mercury
   module Authentication
-
     def can_edit?
-      true # check here to see if the user is logged in/has access
-    end
+      if user_signed_in? && current_user.admin?
+        true
+      else 
+        redirect_to root_path
+      end
+   end
   end
 end
