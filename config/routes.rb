@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    namespace :mercury do
+      resources :images
+    end
   devise_for :users
   mount Mercury::Engine => '/'
   root to: 'pages#home', id: '1'
