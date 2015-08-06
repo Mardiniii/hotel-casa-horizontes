@@ -21,6 +21,10 @@
       <ul class="nagivation__menu-list">        
         <li class="nagivation__menu-item"><%= link_to "Inicio", root_path, class: "nagivation__menu-item-link" %></li>
         <li class="nagivation__menu-item"><%= link_to "Planes y Servicios", "#ModalPrice", "data-toggle" => "modal", class: "nagivation__menu-item-link" %></li>
+        <% if user_signed_in? %>
+          <li class="nagivation__menu-item"><%= link_to "CMS", "/editor/", class: "nagivation__menu-item-link" %></li>
+          <li class="nagivation__menu-item"><%= link_to 'Cerrar Sesión', destroy_user_session_path, method: :delete, class: "nagivation__menu-item-link" %></li>
+        <% end %>        
         <!-- <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Inicio</a></li>
         <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Acerca de Horizontes</a></li>
         <li class="nagivation__menu-item"><a href="#" class="nagivation__menu-item-link">Terminos y Condiciones</a></li>
