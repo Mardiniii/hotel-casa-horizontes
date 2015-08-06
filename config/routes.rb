@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  Mercury::Engine.routes
+  mount Mercury::Engine => '/'
   root to: 'pages#home', id: '1'
 end
