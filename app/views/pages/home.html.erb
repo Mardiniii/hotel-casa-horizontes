@@ -2,8 +2,9 @@
   <div id="intro" class="section">
     <div class="section__decoration"></div>
     <h1 class="main_headline"><a href="http://casahorizontes.com" class="main_headline__link"><img src="<%= asset_path('casa-horizontes/brand/main_logo.png') %>" alt="Hotel Casa Horizontes" class="main_headline__image"></a></h1>
-    <h2 class="section__headline"><span class="section__text-one">Hotel Boutique en el Paraiso Colombiano</span></h2>
-    <p class="section__deck">El único&nbsp;<strong>hotel de lujo&nbsp;</strong>en Colombia, ubicado dentro de un pueblo privado.</p>
+    <h2 class="section__headline"><span class="section__text-one"><%= @page.title1 %></span></h2>
+    <!-- <p class="section__deck">El único&nbsp;<strong>hotel de lujo&nbsp;</strong>en Colombia, ubicado dentro de un pueblo privado.</p> -->
+    <p class="section__deck"><%= @page.text1 %></p>
     <!-- <div class="reservation-box">
       <form class="reservation-box__form">
         <fieldset class="reservation-box__fieldset">
