@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "bootstrap-sass", "3.3.3"
 gem "font-awesome-rails"
 gem 'light_gallery_rails', git: 'https://github.com/stNicolaas/light-gallery-rails.git' 
+gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
 
 group :development, :test do
 	gem 'guard'
