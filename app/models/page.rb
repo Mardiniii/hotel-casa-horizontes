@@ -23,6 +23,9 @@
 #  testimony3 :text
 #  text7      :text
 #  title7     :string
+#  title8     :string
+#  title9     :string
+#  title10    :string
 #
 
 class Page < ActiveRecord::Base
