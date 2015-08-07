@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150806225047) do
+ActiveRecord::Schema.define(version: 20150807034954) do
 
   create_table "mercury_images", force: :cascade do |t|
     t.string   "image_file_name"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20150806225047) do
     t.string   "title8"
     t.string   "title9"
     t.string   "title10"
+    t.string   "image1"
   end
 
   create_table "users", force: :cascade do |t|

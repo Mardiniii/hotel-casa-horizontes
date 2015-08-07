@@ -25,6 +25,10 @@ class PagesController < ApplicationController
 		page.title8 = params[:content][:page_title8][:value]   
 		page.title9 = params[:content][:page_title9][:value]   
 		page.title10 = params[:content][:page_title10][:value]
+		page.image1 = params[:content][:image1][:attributes][:src]
+		puts "********************"
+		puts params[:content][:image1][:attributes][:src]
+		puts "********************"
 	  page.save!
 	  render text: ''
 	end

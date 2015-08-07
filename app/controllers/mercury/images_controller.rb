@@ -4,7 +4,9 @@ class Mercury::ImagesController < MercuryController
 
   # POST /images.json
   def create
-    
+      puts "*********************"
+      puts params
+      puts "*********************"
       @image = Mercury::Image.new(params.require(:image).permit(:image))
     
     @image.save
