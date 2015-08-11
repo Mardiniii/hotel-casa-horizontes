@@ -40,14 +40,14 @@
   </div>
 
 
-  <div id="atardecer" class="section">
+  <div id="atardecer" class="section" data-mercury="image" style="background-image: url('<%= render inline: @page.atardecer %>');">
     <div class="section__decoration"></div>
     <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one" data-mercury="full" id="page_title4"><%= @page.title4.html_safe %></span><span class="section__text-two"data-mercury="full" id="page_title9"><%= @page.title9.html_safe %></span><span class="section__decoration-line-two"></span></h2>
     <p class="section__deck" data-mercury="full" id="page_text4"><%= @page.text4.html_safe %></p>
   </div>
 
 
-  <div id="cocina" class="section">
+  <div id="cocina" class="section" data-mercury="image" style="background-image: url('<%= render inline: @page.cocina %>');">
     <div class="section__decoration"></div>
     <h2 class="section__headline"><span class="section__decoration-line-one"></span><span class="section__text-one" data-mercury="full" id="page_title5"><%= @page.title5.html_safe %></span><span class="section__text-two" data-mercury="full" id="page_title10"><%= @page.title10.html_safe %><span class="section__decoration-line-two"></span></h2>
     <p class="section__deck" data-mercury="full" id="page_text5"><%= @page.text5.html_safe %></p>
@@ -59,7 +59,7 @@
   </div>
 
 
-  <div id="invitados" class="section">
+  <div id="invitados" class="section" style="background-image: url('<%= render inline: @page.invitados %>');">
     <!--.section__decoration-->
     <h2 class="section__headline"><span class="section__text-one" data-mercury="full" id="page_title6"><%= @page.title6.html_safe %></span></h2>
     <div class="section__guest">
@@ -93,7 +93,7 @@
   </div>
 
 
-  <div id="reserva" class="section">
+  <div id="reserva" class="section" data-mercury="image" style="background-image: url('<%= render inline: @page.reserva %>');">
     <h2 class="section__headline"><span class="section__text-one" data-mercury="full" id="page_text7"><%= @page.text7.html_safe %></span></h2>
     <h3 class="section-logo"><a href="http://casahorizontes.com" class="section-logo__link"><img src="<%= asset_path('casa-horizontes/brand/main_logo.png') %>" alt="Hotel Casa Horizontes" class="section-logo__image"></a></h3>
     <div class="section__contact">

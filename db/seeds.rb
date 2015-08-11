@@ -32,11 +32,11 @@ Page.create(
 	image3: "<%= asset_path('casa-horizontes/guests/3.jpg') %>",
 	intro: "<%= asset_path('casa-horizontes/sections/intro.jpg') %>",
 	realismo: "<%= asset_path('casa-horizontes/sections/realismo.jpg') %>",
-	hospedaje: "<%= asset_path('casa-horizontes/sections/hospedaje.jpg') %>"
-	# :atardecer,
-	# :cocina,
-	# :invitados,
-	# :reserva
+	hospedaje: "<%= asset_path('casa-horizontes/sections/hospedaje.jpg') %>",
+	atardecer: "<%= asset_path('casa-horizontes/sections/atardecer.jpg') %>",
+	cocina: "<%= asset_path('casa-horizontes/sections/cocina.jpg') %>",
+	invitados: "<%= asset_path('casa-horizontes/sections/invitados.jpg') %>",
+	reserva: "<%= asset_path('casa-horizontes/sections/reserva.jpg') %>"
 )
 
 User.create([

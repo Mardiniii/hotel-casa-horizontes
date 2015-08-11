@@ -31,14 +31,8 @@ class PagesController < ApplicationController
 		page.intro = params[:content][:intro][:attributes][:src] if params[:content] && params[:content][:intro] && params[:content][:intro][:attributes]
 		page.realismo = params[:content][:realismo][:attributes][:src] if params[:content] && params[:content][:realismo] && params[:content][:realismo][:attributes]
 		page.hospedaje = params[:content][:hospedaje][:attributes][:src] if params[:content] && params[:content][:hospedaje] && params[:content][:hospedaje][:attributes]
-		puts "***************************"
-		# if params[:content][:intro][:attributes][:src].nil?
-		# 	puts "No hay cambios en intro"
-		# else
-		# 	page.intro = params[:content][:intro][:attributes][:src]
-		# end
-		# puts params[:content][:realismo][:attributes][:src]
-		puts "***************************"
+		page.atardecer = params[:content][:atardecer][:attributes][:src] if params[:content] && params[:content][:atardecer] && params[:content][:atardecer][:attributes]
+		page.cocina = params[:content][:cocina][:attributes][:src] if params[:content] && params[:content][:cocina] && params[:content][:cocina][:attributes]
 	  page.save!
 	  render text: ''
 	end
