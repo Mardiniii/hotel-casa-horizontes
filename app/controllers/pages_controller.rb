@@ -26,9 +26,19 @@ class PagesController < ApplicationController
 		page.title9 = params[:content][:page_title9][:value]   
 		page.title10 = params[:content][:page_title10][:value]
 		page.image1 = params[:content][:image1][:attributes][:src]
-		puts "********************"
-		puts params[:content][:image1][:attributes][:src]
-		puts "********************"
+		page.image2 = params[:content][:image2][:attributes][:src]
+		page.image3 = params[:content][:image3][:attributes][:src]
+		page.intro = params[:content][:intro][:attributes][:src] if params[:content] && params[:content][:intro] && params[:content][:intro][:attributes]
+		page.realismo = params[:content][:realismo][:attributes][:src] if params[:content] && params[:content][:realismo] && params[:content][:realismo][:attributes]
+		page.hospedaje = params[:content][:hospedaje][:attributes][:src] if params[:content] && params[:content][:hospedaje] && params[:content][:hospedaje][:attributes]
+		puts "***************************"
+		# if params[:content][:intro][:attributes][:src].nil?
+		# 	puts "No hay cambios en intro"
+		# else
+		# 	page.intro = params[:content][:intro][:attributes][:src]
+		# end
+		# puts params[:content][:realismo][:attributes][:src]
+		puts "***************************"
 	  page.save!
 	  render text: ''
 	end

@@ -27,4 +27,21 @@ Page.create(
 	testimony2: '<strong>Catalina:&nbsp;</strong>No hace falta decir que nos enamoramos nos encanta el lugar, los anfitriones y el ambiente. lleva mucho tiempo a describir la singularidad del lugar, la decoración de las habitaciones, zonas comunes y su pintoresco café donde disfrutamos de un delicioso aperitivo.', 
 	testimony3: '<strong>Enrique:&nbsp;</strong>Es tranquilo, hermoso, un lugar para sentarse junto a la piscina en una hamaca y leer García Márquez. Hay unos cuantos hoteles todos pequeños. Casa horizontes es el mejor. Chef maravilloso, grandes margaritas hechas con mango fresco local. Junto a la piscina. Increíblemente buenos anfitriones.', 
 	text7: 'Reserva ahora y te esperamos para vivir una experiencia mágica.',
+	image1: "<%= asset_path('casa-horizontes/guests/1.jpg') %>",
+	image2: "<%= asset_path('casa-horizontes/guests/2.jpg') %>",
+	image3: "<%= asset_path('casa-horizontes/guests/3.jpg') %>",
+	intro: "<%= asset_path('casa-horizontes/sections/intro.jpg') %>",
+	realismo: "<%= asset_path('casa-horizontes/sections/realismo.jpg') %>",
+	hospedaje: "<%= asset_path('casa-horizontes/sections/hospedaje.jpg') %>"
+	# :atardecer,
+	# :cocina,
+	# :invitados,
+	# :reserva
 )
+
+User.create([
+	{email: "sezama08@gmail.com",password: "holamama", role: "admin"},
+	{email: "felipe@casahorizontes.com",password: "casahorizontes", role: "admin"},
+	{email: "socialmedia@casahorizontes.com",password: "casahorizontes", role: "admin"},
+	{email: "art@casahorizontes.com",password: "casahorizontes", role: "admin"}
+	])
