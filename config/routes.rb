@@ -3,6 +3,7 @@ Rails.application.routes.draw do
       resources :images
     end
   devise_for :users
+  resources :galleries
   mount Mercury::Engine => '/'
   root to: 'pages#home', id: '1'
   put '/', to: 'pages#save_page', id: '1'

@@ -26,6 +26,16 @@
 #  title8     :string
 #  title9     :string
 #  title10    :string
+#  image1     :string
+#  image2     :string
+#  image3     :string
+#  intro      :string
+#  realismo   :string
+#  hospedaje  :string
+#  atardecer  :string
+#  cocina     :string
+#  invitados  :string
+#  reserva    :string
 #
 
 class Page < ActiveRecord::Base
