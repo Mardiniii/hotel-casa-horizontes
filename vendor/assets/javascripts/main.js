@@ -1,7 +1,5 @@
 'use strict';
-
-$(document).ready(function () {
-
+$(document).on("ready page:load", function() {
   $.fn.extend({
     toggleText: function(one, two){
       var textValue = $(this).text() == one ? two : one;

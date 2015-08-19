@@ -105,6 +105,7 @@
 </div>
 
 <script>
+$(document).on("ready page:load", function() {
   $('#realismo_gallery').click(function (e) {
     $(this).lightGallery({
       dynamic: true,
@@ -129,7 +130,7 @@
       html: true,
       mobileSrc: false,
       dynamicEl: [
-        <% pics = @galleries.where(gallery_number: 0).count %>
+        <% pics = @galleries.where(gallery_number: 1).count %>
         <% @galleries.where(gallery_number: 1).each_with_index do |gallery,index| %>
           <% if index+1 == pics %>
             { 'src': '<%= gallery.image.url %>', 'thumb': '<%= gallery.image.url %>', 'sub-html': '#dynamicHtml' }
@@ -140,4 +141,5 @@
       ]
     });
   });
+});  
 </script>
