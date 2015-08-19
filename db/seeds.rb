@@ -6,6 +6,33 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+Gallery.create(
+	{:id => 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo00.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo01.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo02.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo03.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo04.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo05.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo06.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo07.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo08.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo09.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo10.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo11.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo12.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo13.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo14.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo15.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo16.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo17.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo18.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo19.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo20.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo21.jpg"),:name => "Image Seed"},
+	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo22.jpg"),:name => "Image Seed"}
+)
+
+
 Page.create(
 	title1: 'Hotel Boutique en el Paraiso Colombiano', 
 	text1: 'El único&nbsp;<strong>hotel de lujo&nbsp;</strong>en Colombia, ubicado dentro de un pueblo privado.',

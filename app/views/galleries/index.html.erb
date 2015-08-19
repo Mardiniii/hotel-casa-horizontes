@@ -1,13 +1,28 @@
-<h1>INDEX</h1>
-<h1>INDEX</h1>
-<h1>INDEX</h1>
-
-<h1>INDEX</h1>
-<h1>INDEX</h1>
-<h1>INDEX</h1>
-<h1>INDEX</h1>
-v
-<h1>INDEX</h1>
-<h1>INDEX</h1>
-v<h1>INDEX</h1>
-<h1>INDEX</h1>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12"> 
+      <h2 class="text-center" style="margin-top: 150px;">Listado de Imagenes en las gallerias</h2>     
+      	<table class="table">
+      		<tr class="success">
+      			<th class="text-center lead lead-lg">Imagen</th>
+      			<th class="text-center lead lead-lg">Nombre</th>
+      			<th class="text-center lead lead-lg">Galeria</th>
+      			<th class="text-center lead lead-lg">Opciones</th>
+      		</tr>		
+      		<% @galleries.each do |gallery| %>							
+      			<tr class="text-center">
+      				<td class="lead lead-sm vert-align text-center"><%= image_tag gallery.image.url(:thumb) %></td>					
+      				<td class="lead lead-sm vert-align text-center"><%= gallery.name %></td>
+      				<td class="lead lead-sm vert-align text-center"><%= gallery.gallery_number %></td>						
+      				<td class="lead lead-sm vert-align text-center" style="width: 15%">
+      					<%= link_to "Editar", edit_gallery_path(gallery), class: "btn btn-ar btn-warning", title: "Editar Imagen" %>
+      					<%= link_to gallery_path(gallery.id), method: :delete, title: "Eliminar Imagen", data: { confirm: '¿Esta seguro que desea eliminar la imagen?' }, class: "btn btn btn-ar btn-danger" do %>
+      						Eliminar
+      					<% end %>
+      				</td>												
+      			</tr>								
+      		<% end %>
+      	</table>
+    </div>
+  </div>
+</div>
