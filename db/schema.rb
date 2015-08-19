@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150806194056) do
+ActiveRecord::Schema.define(version: 20150819143502) do
+
+  create_table "galleries", force: :cascade do |t|
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "name"
+    t.integer  "gallery_number"
+  end
+
+  create_table "mercury_images", force: :cascade do |t|
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pages", force: :cascade do |t|
     t.string   "title1"
@@ -37,6 +57,16 @@ ActiveRecord::Schema.define(version: 20150806194056) do
     t.string   "title8"
     t.string   "title9"
     t.string   "title10"
+    t.string   "image1"
+    t.string   "image2"
+    t.string   "image3"
+    t.string   "intro"
+    t.string   "realismo"
+    t.string   "hospedaje"
+    t.string   "atardecer"
+    t.string   "cocina"
+    t.string   "invitados"
+    t.string   "reserva"
   end
 
   create_table "users", force: :cascade do |t|
