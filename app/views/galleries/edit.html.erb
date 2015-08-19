@@ -1,0 +1,16 @@
+<style>
+	html, body {
+		overflow: scroll;
+	}
+</style>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2"> 
+      <h2 class="text-center" style="margin-top: 150px;">Editar imagen de la galeria galeria</h2>     
+      <div class="text-center">
+      	<%= image_tag @gallery.image.url(:thumb) %>
+      	<%= render 'form' %>      
+      </div>
+    </div>
+  </div>
+</div>

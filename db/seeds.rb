@@ -6,31 +6,30 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Gallery.create(
+Gallery.create([
 	{:id => 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo00.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo01.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo02.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo03.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo04.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo05.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo06.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo07.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo08.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo09.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo10.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo11.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo12.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo13.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo14.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo15.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo16.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo17.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo18.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo19.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo20.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo21.jpg"),:name => "Image Seed"},
-	{:id => Gallery.last.id + 1,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo22.jpg"),:name => "Image Seed"}
-)
+	{:id => 2,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo01.jpg"),:name => "Image Seed"},
+	{:id => 3,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo02.jpg"),:name => "Image Seed"},
+	{:id => 4,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo03.jpg"),:name => "Image Seed"},
+	{:id => 5,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo04.jpg"),:name => "Image Seed"},
+	{:id => 6,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo05.jpg"),:name => "Image Seed"},
+	{:id => 7,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo06.jpg"),:name => "Image Seed"},
+	{:id => 8,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo07.jpg"),:name => "Image Seed"},
+	{:id => 9,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo08.jpg"),:name => "Image Seed"},
+	{:id => 10,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo09.jpg"),:name => "Image Seed"},
+	{:id => 11,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo10.jpg"),:name => "Image Seed"},
+	{:id => 12,:gallery_number => 0, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo11.jpg"),:name => "Image Seed"},
+	{:id => 13,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo12.jpg"),:name => "Image Seed"},
+	{:id => 14,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo13.jpg"),:name => "Image Seed"},
+	{:id => 15,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo14.jpg"),:name => "Image Seed"},
+	{:id => 16,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo15.jpg"),:name => "Image Seed"},
+	{:id => 17,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo16.jpg"),:name => "Image Seed"},
+	{:id => 18,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo17.jpg"),:name => "Image Seed"},
+	{:id => 19,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo18.jpg"),:name => "Image Seed"},
+	{:id => 20,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo19.jpg"),:name => "Image Seed"},
+	{:id => 21,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo20.jpg"),:name => "Image Seed"},
+	{:id => 22,:gallery_number => 1, :image => File.new("#{Rails.root}/app/assets/images/casa-horizontes/gallery/gallery_demo21.jpg"),:name => "Image Seed"}
+])
 
 
 Page.create(
@@ -71,4 +70,4 @@ User.create([
 	{email: "felipe@casahorizontes.com",password: "casahorizontes", role: "admin"},
 	{email: "socialmedia@casahorizontes.com",password: "casahorizontes", role: "admin"},
 	{email: "art@casahorizontes.com",password: "casahorizontes", role: "admin"}
-	])
+])

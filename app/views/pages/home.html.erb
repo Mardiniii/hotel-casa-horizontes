@@ -111,17 +111,14 @@
       html: true,
       mobileSrc: false,
       dynamicEl: [
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo01.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo01.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo02.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo02.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo03.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo03.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo04.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo04.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo05.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo05.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo06.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo06.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo07.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo07.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo08.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo08.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo09.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo09.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo10.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo10.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo11.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo11.jpg") %>', 'sub-html': '#dynamicHtml' }
+        <% pics = @galleries.where(gallery_number: 0).count %>
+        <% @galleries.where(gallery_number: 0).each_with_index do |gallery,index| %>
+          <% if index+1 == pics %>
+            { 'src': '<%= gallery.image.url %>', 'thumb': '<%= gallery.image.url %>', 'sub-html': '#dynamicHtml' }
+          <% else %>
+            { 'src': '<%= gallery.image.url %>', 'thumb': '<%= gallery.image.url %>', 'sub-html': '#dynamicHtml' },
+          <% end %>
+        <% end %>
       ]
     });
   });
@@ -132,16 +129,14 @@
       html: true,
       mobileSrc: false,
       dynamicEl: [
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo12.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo12.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo13.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo13.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo14.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo14.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo15.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo15.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo16.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo16.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo17.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo17.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo18.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo18.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo19.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo19.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo20.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo20.jpg") %>', 'sub-html': '#dynamicHtml' }, 
-        { 'src': '<%= asset_path("casa-horizontes/gallery/gallery_demo21.jpg") %>', 'thumb': '<%= asset_path("casa-horizontes/gallery/gallery_demo21.jpg") %>', 'sub-html': '#dynamicHtml' }
+        <% pics = @galleries.where(gallery_number: 0).count %>
+        <% @galleries.where(gallery_number: 1).each_with_index do |gallery,index| %>
+          <% if index+1 == pics %>
+            { 'src': '<%= gallery.image.url %>', 'thumb': '<%= gallery.image.url %>', 'sub-html': '#dynamicHtml' }
+          <% else %>
+            { 'src': '<%= gallery.image.url %>', 'thumb': '<%= gallery.image.url %>', 'sub-html': '#dynamicHtml' },
+          <% end %>
+        <% end %>
       ]
     });
   });

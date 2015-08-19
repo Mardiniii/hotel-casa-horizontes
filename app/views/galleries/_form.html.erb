@@ -1,0 +1,22 @@
+<%= form_for(@gallery) do |gallery| %>
+  <h3 class="right-line text-left">NUEVO INSTRUCTOR</h3>
+		<div class="field form-group">
+			<%= gallery.label :name, "Nombre de la imagen:", class: "lead lead-lg" %>
+			<%= gallery.text_field :name, class: "form-control" %>
+		</div>
+
+		<div class="field form-group">
+		  <%= gallery.label :image, "Imagen para la galleria:", class: "lead lead-lg" %>
+		  <%= gallery.file_field :image, class: "form-control" %>
+		</div>
+
+		<div class="field form-group">
+		  <%= gallery.label :gallery_number, "Asignar Galleria a esta imagen", class: "lead lead-lg" %><br />
+		  <%= gallery.select :gallery_number, options_for_select(Gallery.gallery_numbers.map {|k,v| [k.humanize,k]}, @gallery.gallery_number), {}, { :class => "form-control", :id => "select_gallery_number" } %>
+		</div>
+
+		<div class="actions form-group text-center">		  	
+			<%= gallery.submit "Guardar Imagen", class: "btn btn-ar btn-lg btn-success" %>
+		</div>
+  </div>
+<% end %>

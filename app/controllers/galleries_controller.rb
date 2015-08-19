@@ -13,9 +13,14 @@ class GalleriesController < ApplicationController
 	end
 
 	def edit
+		@gallery = Gallery.find(params[:id])
 	end
 
 	def update
+		@gallery = Gallery.find(params[:id])
+		if @gallery.update(gallery_params)
+			redirect_to galleries_path
+		end
 	end
 
 	def index

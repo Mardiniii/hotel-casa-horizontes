@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 	def home
 		@page = Page.find(params[:id])
+		@galleries = Gallery.all
 	end
 
 	def save_page
