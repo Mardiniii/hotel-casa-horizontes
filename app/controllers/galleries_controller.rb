@@ -2,6 +2,7 @@ class GalleriesController < ApplicationController
 	before_action :authenticate_user!
 
 	def new
+		@gallery = Gallery.new
 	end
 
 	def create
@@ -18,4 +19,9 @@ class GalleriesController < ApplicationController
 
 	def destroy
 	end
+
+	private
+		def gallery_params
+  		params.require(:gallery).permit(:name, :image, :gallery_number)
+		end
 end
