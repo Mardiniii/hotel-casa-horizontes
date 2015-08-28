@@ -6,6 +6,9 @@
   background: #fcfcfc;
   background-repeat: no-repeat;
   background-size: cover;
+  @include respond-to ("small"){
+    overflow: hidden;
+  }
 }
 
 .section__deck {
