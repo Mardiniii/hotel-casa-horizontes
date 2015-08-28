@@ -1,0 +1,68 @@
+.section#atardecer {
+  // background-image: url(asset-path('casa-horizontes/sections/atardecer.jpg'));
+}
+
+.section#atardecer .section__deck {
+  position: absolute;
+  left: 600px;
+  bottom: 20px;
+  width: 500px;
+}
+@media (min-width: 768px) and (max-width: 1059px) {
+  
+  .section#atardecer .section__deck {
+    left: 500px;
+  }
+}
+
+.section#atardecer .section__decoration {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  background-image: url(asset-path('casa-horizontes/decorations/atardecer.png'));
+  background-repeat: no-repeat;
+}
+
+.section#atardecer .section__headline {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.section#atardecer .section__text-one {
+  display: block;
+  font-size: 46px;
+  line-height: 1.1;
+  width: 320px;
+}
+
+.section#atardecer .section__text-two {
+  position: absolute;
+  top: 105px;
+  left: 163px;
+  display: block;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.section#atardecer .section__decoration-line-one {
+  position: absolute;
+  left: -140px;
+  top: -10px;
+  height: 3px;
+  width: 355px;
+  background-color: #fff;
+}
+
+.section#atardecer .section__decoration-line-two {
+  position: absolute;
+  left: 30px;
+  bottom: -17px;
+  height: 3px;
+  width: 280px;
+  background-color: #fff;
+}

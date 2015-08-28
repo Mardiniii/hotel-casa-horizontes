@@ -1,0 +1,84 @@
+
+#hospedaje_gallery {
+  position: absolute;
+  top: 65%;
+  right: 30px;
+  cursor: pointer;
+}
+
+#hospedaje_gallery:hover {
+  opacity: 0.9;
+}
+
+
+.section#hospedaje {
+  // background-image: url(asset-path('casa-horizontes/sections/hospedaje.jpg'));
+}
+
+.section#hospedaje .section__deck {
+  position: absolute;
+  right: 40px;
+  top: 250px;
+  width: 270px;
+  color: #403b3e;
+  text-align: right;
+}
+
+.section#hospedaje .section__decoration {
+  position: absolute;
+  right: -1px;
+  top: 0;
+  height: 100vh;
+  width: 465px;
+  background-image: url(asset-path('casa-horizontes/decorations/hospedaje.png'));
+  background-repeat: no-repeat;
+}
+
+.section#hospedaje .section__decoration-map {
+  position: absolute;
+  right: 50px;
+  top: 100px;
+  height: 100px;
+  width: 100px;
+  background-image: url(asset-path('casa-horizontes/decorations/antioquia.png'));
+  background-repeat: no-repeat;
+}
+
+.section#hospedaje .section__headline {
+  position: absolute;
+  top: 90px;
+  right: 210px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.section#hospedaje .section__text-one {
+  display: block;
+  font-size: 52px;
+  line-height: 1;
+}
+
+.section#hospedaje .section__text-two {
+  display: block;
+  margin-left: 90px;
+  font-size: 39px;
+  line-height: 1;
+}
+
+.section#hospedaje .section__decoration-line-one {
+  position: absolute;
+  left: -12px;
+  top: -9px;
+  height: 3px;
+  width: 290px;
+  background-color: #fff;
+}
+
+.section#hospedaje .section__decoration-line-two {
+  position: absolute;
+  left: -12px;
+  bottom: -12px;
+  height: 3px;
+  width: 290px;
+  background-color: #fff;
+}
