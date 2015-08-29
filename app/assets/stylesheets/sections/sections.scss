@@ -8,6 +8,7 @@
   background-size: cover;
   @include respond-to ("small"){
     overflow: hidden;
+    background-size: cover;
   }
 }
 
@@ -23,6 +24,7 @@
   font-family: "Lobster", cursive;
   letter-spacing: 1px;
   text-shadow: 1px 1px 13px rgba(44, 44, 44, 0.3);
+
 }
 
 .section__decoration {
