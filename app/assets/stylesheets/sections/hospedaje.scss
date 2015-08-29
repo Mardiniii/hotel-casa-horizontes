@@ -62,11 +62,12 @@
 
   &__headline {
     position: absolute;
-    top: 50px;
+    top: 90px;
     right: 210px;
     font-weight: lighter;
     letter-spacing: 1px;
     @include respond-to ("small"){
+      top: 50px;
       right: 20px;
     }
   }
