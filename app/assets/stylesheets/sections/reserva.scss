@@ -10,10 +10,12 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50px);
   top: 30%;
   height: 40vh;
+
+  @include respond-to ("small"){
+    top: 130px;
+  }
 }
 
 .section#reserva .section-logo__link {
@@ -28,8 +30,6 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   top: 75%;
   text-align: center;
 }
@@ -61,8 +61,6 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   top: 7%;
   max-width: 800px;
   color: #000;
@@ -70,14 +68,17 @@
   font-size: 2.7vw;
   font-weight: lighter;
   text-align: center;
+
+  @include respond-to ("small"){
+    font-size: 24px;
+    width: 95%;
+  }
 }
 
 .section#reserva .section__reserva {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   top: 90%;
 }
 
@@ -91,12 +92,16 @@
   background-color: #3cbf43;
   border: 1px solid #309835;
   transition: all 0.4s;
-  -webkit-transition: all 0.4s;
+
+  @include respond-to ("small"){
+    font-size: 16px;
+    width: 220px;
+    text-align: center;
+  }
 }
 
 .section#reserva .section__reserva-link:hover {
   background-color: #309835;
   border: 1px solid #3cbf43;
   transition: all 0.4s;
-  -webkit-transition: all 0.4s;
 }
