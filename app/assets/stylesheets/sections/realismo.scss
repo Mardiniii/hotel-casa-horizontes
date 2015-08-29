@@ -5,6 +5,9 @@
   bottom: 30px;
   left: 30%;
   cursor: pointer;
+  @include respond-to ("small"){
+    display: none;
+  }
 }
 
 #realismo_gallery:hover {
@@ -12,17 +15,110 @@
 }
 
 
-.section#realismo {
+.section#realismo .section{
   // background-image: url(asset-path('casa-horizontes/sections/realismo.jpg'));
+
+  &__deck {
+    position: absolute;
+    bottom: 10px;
+    left: 800px;
+    width: 430px;
+    text-align: right;
+
+    @include respond-to ("small"){
+      left: 0;
+      width: 97vw;
+      bottom: 10px;
+      margin-right: 20px;
+    }
+  }
+  &__decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    height: 377px;
+    margin: auto;
+    width: 100%;
+    background-image: url(asset-path('casa-horizontes/decorations/realismo.png'));
+
+    @include respond-to ("small"){
+      z-index: 0;
+    }
+  }
+  &__decoration-map {
+    position: absolute;
+    bottom: 230px;
+    right: 10%;
+    height: 135px;
+    margin: auto;
+    width: 100px;
+    background-image: url(asset-path('casa-horizontes/decorations/colombia.png'));
+
+    @include respond-to ("small"){
+      bottom: 300px;
+      left: 20px;
+      margin: 0;
+    }
+  }
+
+  &__headline {
+    position: absolute;
+    bottom: 190px;
+    left: 50px;
+    font-weight: lighter;
+    
+    @include respond-to ("small"){
+      bottom: 230px;
+      left: 80px;
+    }
+  }
+
+  &__text-one {
+    display: block;
+    margin-left: 40px;
+    font-size: 49px;
+    line-height: 1;
+    
+    @include respond-to ("small"){
+      font-size: 36px;
+    }
+  }
+
+  &__text-two {
+    display: block;
+    font-size: 59px;
+    line-height: 1;
+    @include respond-to ("small"){
+      font-size: 46px;
+    }
+  }
+
+  &__decoration-line-two {
+    position: absolute;
+    left: 30px;
+    bottom: -30px;
+    height: 3px;
+    width: 280px;
+    background-color: #fff;
+
+    @include respond-to ("small"){
+      bottom: 0;
+    }
+  }
+
+  &__decoration-line-one {
+    position: absolute;
+    left: -90px;
+    bottom: -20px;
+    height: 3px;
+    width: 355px;
+    background-color: #fff;
+    @include respond-to ("small"){
+      bottom: -10px;
+    }
+  }
 }
 
-.section#realismo .section__deck {
-  position: absolute;
-  bottom: 10px;
-  left: 800px;
-  width: 430px;
-  text-align: right;
-}
 @media (min-width: 768px) and (max-width: 1059px) {
   
   .section#realismo .section__deck {
@@ -31,15 +127,7 @@
   }
 }
 
-.section#realismo .section__decoration {
-  position: absolute;
-  bottom: 0;
-  left: 0%;
-  height: 377px;
-  margin: auto;
-  width: 100%;
-  background-image: url(asset-path('casa-horizontes/decorations/realismo.png'));
-}
+
 @media (min-width: 768px) and (max-width: 1059px) {
   
   .section#realismo .section__decoration {
@@ -47,15 +135,7 @@
   }
 }
 
-.section#realismo .section__decoration-map {
-  position: absolute;
-  bottom: 200px;
-  right: 10%;
-  height: 135px;
-  margin: auto;
-  width: 100px;
-  background-image: url(asset-path('casa-horizontes/decorations/colombia.png'));
-}
+
 @media (min-width: 768px) and (max-width: 1059px) {
   
   .section#realismo .section__decoration-map {
@@ -63,40 +143,3 @@
   }
 }
 
-.section#realismo .section__headline {
-  position: absolute;
-  bottom: 190px;
-  left: 50px;
-  font-weight: lighter;
-}
-
-.section#realismo .section__text-one {
-  display: block;
-  margin-left: 40px;
-  font-size: 49px;
-  line-height: 1;
-}
-
-.section#realismo .section__text-two {
-  display: block;
-  font-size: 59px;
-  line-height: 1;
-}
-
-.section#realismo .section__decoration-line-one {
-  position: absolute;
-  left: -90px;
-  bottom: -20px;
-  height: 3px;
-  width: 355px;
-  background-color: #fff;
-}
-
-.section#realismo .section__decoration-line-two {
-  position: absolute;
-  left: 30px;
-  bottom: -30px;
-  height: 3px;
-  width: 280px;
-  background-color: #fff;
-}
