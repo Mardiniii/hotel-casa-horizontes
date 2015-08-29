@@ -10,8 +10,10 @@
     top: 240px;
     
     width: 300px;
-    animation: fadeslide 0.8s 1s ease-out backwards;
-    -webkit-animation: fadeslide 0.8s 1s ease-out backwards;
+
+    @include respond-to ("medium_and_large"){
+      animation: fadeslide 0.8s 1s ease-out backwards;
+    }
 
     @include respond-to ("small"){
       top: 380px; 
@@ -32,10 +34,12 @@
     
     background-image: url(asset-path('casa-horizontes/decorations/intro.png'));
     background-repeat: no-repeat;
-    animation: slide 0.6s 0.6s ease-out backwards;
-    -webkit-animation: slide 0.6s 0.6s ease-out backwards;
 
-    @include respond-to ("small"){
+    @include respond-to ("medium_and_large"){
+      animation: slide 0.6s 0.6s ease-out backwards;
+    }
+
+    @include respond-to ("small") {
       width: 100vw;
       z-index: 0;
       background-position: -200px 0px;
@@ -49,10 +53,12 @@
     font-weight: lighter;
     line-height: 1.15;
     text-shadow: 1px 1px 13px rgba(55, 55, 55, 0.6);
-    animation: fadeslide 0.9s 0.8s ease-out backwards;
-    -webkit-animation: fadeslide 0.9s 0.8s ease-out backwards;
 
-    @include respond-to ("small"){
+    @include respond-to ("medium_and_large"){
+      animation: fadeslide 0.9s 0.8s ease-out backwards;
+    }
+
+    @include respond-to ("small") {
       top: 270px;
       left: 50%;
       transform: translateX(-50%);
@@ -63,48 +69,13 @@
   }
 }
 
-@-webkit-keyframes slide {
-  from {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    transform: translateX(-50px);
-    -webkit-transform: translateY(-50px);
-    -ms-transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    transform: translateX(0px);
-    -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-}
 @keyframes slide {
   from {
     opacity: 0;
     transform: translateX(-50px);
-    -webkit-transform: translateY(-50px);
-    -ms-transform: translateY(-50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
-    -webkit-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes fadeslide {
-  from {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transform: translateX(50px);
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 }
@@ -112,14 +83,10 @@
 @keyframes fadeslide {
   from {
     opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transform: translateX(50px);
     transform: translateX(50px);
   }
   to {
     opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translateX(0px);
     transform: translateX(0px);
   }
 }
