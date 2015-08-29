@@ -1,93 +1,141 @@
 .section#invitados {
+  @include respond-to ("small"){
+    height: auto;
+  }
+}
+.section#invitados .section{
   // background-image: url(asset-path('casa-horizontes/sections/invitados.jpg'));
+  &__guest {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  &__guest-caption {
+    position: absolute;
+    bottom: -190px;
+    left: 30px;
+    width: 100%;
+
+    @include respond-to ("small"){
+      top: 0;
+      left: auto;
+      right: 0;
+      width: calc(100vw - 140px);
+      position: static;
+      float: right;
+    }
+  }
+
+  &__guest-list {
+    @include respond-to ("small"){
+      margin-top: 70px;
+      padding: 0;
+    }
+  }
+
+  &__guest-item {
+    display: inline-block;
+    width: 33%;
+    @include respond-to ("small"){
+      width: 100%;
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  &__guest-image{
+    @include respond-to ("small"){
+      width: 100px;
+    }
+  }
+
+  &__guest-figure {
+    position: relative;
+    margin: 25px;
+    @include respond-to ("small"){
+      margin: 10px 15px;
+    }
+  }
+
+  &__guest-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+
+    @include respond-to ("small"){
+      display: none;
+    }
+  }
+
+  &__guest-svg path, &__guest-svg polygon {
+    fill: rgba(255, 255, 255, 0.9);
+  }
+
+  &__guest-svg #Capa_1 {
+    height: 270px;
+  }
+
+  &__guest-svg #Capa_2 {
+    height: 270px;
+  }
+
+  &__guest-svg #Capa_3 {
+    height: 270px;
+  }
+
+  &__guest-text {
+    font-family: "Lato", sans-serif;
+    line-height: 1.3;
+    font-size: 16px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    @include respond-to ("small"){
+      padding: 0 !important;
+    }
+  }
+
+  &__guest-text--one {
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+
+  &__guest-text--two {
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+
+  &__guest-text--three {
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+
+  &__headline {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #000;
+    font-size: 48px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+
+    @include respond-to ("small"){
+      left: 0;
+      top: 10px;
+      width: 100vw;
+      font-size: 22px;
+      text-align: center;
+      transform: translateX(0);
+    }
+  }
 }
 
-.section#invitados .section__guest {
-  position: relative;
-  max-width: 900px;
-  margin: auto;
-}
-
-.section#invitados .section__guest-item {
-  display: inline-block;
-  width: 33%;
-}
-
-.section#invitados .section__guest-figure {
-  position: relative;
-  margin: 25px;
-}
-
-.section#invitados .section__guest-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-}
-
-.section#invitados .section__guest-svg path, .section#invitados .section__guest-svg polygon {
-  fill: rgba(255, 255, 255, 0.9);
-}
-
-.section#invitados .section__guest-svg #Capa_1 {
-  height: 270px;
-}
-
-.section#invitados .section__guest-svg #Capa_2 {
-  height: 270px;
-}
-
-.section#invitados .section__guest-svg #Capa_3 {
-  height: 270px;
-}
-
-.section#invitados .section__guest-caption {
-  position: absolute;
-  bottom: -190px;
-  left: 30px;
-  width: 100%;
-}
-
-.section#invitados .section__guest-text {
-  font-family: "Lato", sans-serif;
-  line-height: 1.3;
-  font-size: 16px;
-  padding: 20px;
-  position: relative;
-  text-align: center;
-  z-index: 1;
-}
-
-.section#invitados .section__guest-text--one {
-  padding-top: 10px;
-  padding-right: 60px;
-}
-
-.section#invitados .section__guest-text--two {
-  padding-top: 10px;
-  padding-left: 30px;
-}
-
-.section#invitados .section__guest-text--three {
-  padding-top: 10px;
-  padding-left: 20px;
-}
-
-.section#invitados .section__headline {
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  color: #000;
-  font-size: 48px;
-  font-weight: lighter;
-  letter-spacing: 1px;
-}
 @media (min-width: 768px) and (max-width: 1059px) {
-  
   .section#invitados .section__headline {
     font-size: 36px;
   }
