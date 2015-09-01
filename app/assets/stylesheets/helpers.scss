@@ -1,0 +1,75 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+@mixin respond-to($breakpoint) {
+
+  $resolution: $desktop;
+  $orientation: "nil";
+
+  @if $breakpoint == "small" {
+    $resolution: $smartphone-home;
+  }
+
+  @else if $breakpoint == "small_in_portrait" {
+    $resolution: $smartphone-home;
+    $orientation: "portrait";
+  }
+
+  @else if $breakpoint == "small_in_landscape" {
+    $resolution: $smartphone-home;
+    $orientation: "landscape";
+  }
+
+  @else if $breakpoint == "small_and_medium" {
+    $resolution: $mobile;
+  }
+
+  @else if $breakpoint == "less_then_medium_in_landscape" {
+    $resolution: "(max-width: 1000px)";
+    $orientation: "landscape";
+  }
+
+  @else if $breakpoint == "medium_in_portrait" {
+    $resolution: $tablet-home;
+    $orientation: "portrait";
+  }
+
+  @else if $breakpoint == "medium_in_landscape" {
+    $resolution: $tablet-home;
+    $orientation: "landscape";
+  }
+
+  @else if $breakpoint == "medium" {
+    $resolution: $tablet-home;
+  }
+
+  @else if $breakpoint == "medium_and_large" {
+    $resolution: $tabletdesktop-home;
+  }
+
+  @else if $breakpoint == "large" {
+    $resolution: $desktop;
+  }
+
+  @if $orientation == "nil" {
+    @media #{$resolution} {
+      @content;
+    }
+  }
+  @else {
+    @media #{$resolution} and (orientation: #{$orientation}){
+      @content;
+    }
+  }
+}

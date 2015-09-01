@@ -1,0 +1,45 @@
+@import "variables";
+@import "document";
+@import "helpers";
+@import "grid";
+@import "reservations";
+@import "logo";
+
+@import "sections/navigation";
+@import "social";
+@import "sections/sections";
+@import "sections/intro";
+@import "sections/realismo";
+@import "sections/hospedaje";
+@import "sections/atardecer";
+@import "sections/cocina";
+@import "sections/invitados";
+@import "sections/reserva";
+
+@import "font-awesome";
+@import "jquery.pagepiling";
+@import "light-gallery";
+@import "normalize";
+@import "customized_bootstrap";
+@import "gallery";
+@import "mercury";
+@import "mercury_overrides";
+@import "pages";
+
+input[type="file"] {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+tbody {
+    height: 120px;
+    overflow-y: auto;
+}

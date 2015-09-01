@@ -17,6 +17,7 @@ gem 'annotate'
 gem 'hirb'
 gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
+gem 'autoprefixer-rails'
 
 group :development, :test do
 	gem 'guard'

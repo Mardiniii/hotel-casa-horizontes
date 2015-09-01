@@ -1,0 +1,107 @@
+.section#reserva {
+  // background-image: url(asset-path('casa-horizontes/sections/reserva.jpg'));
+}
+
+.section#reserva .section__decoration {
+  background-image: url(asset-path('casa-horizontes/decorations/reserva.jpg'));
+}
+
+.section#reserva .section-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  height: 40vh;
+
+  @include respond-to ("small"){
+    top: 130px;
+  }
+}
+
+.section#reserva .section-logo__link {
+  height: 100%;
+}
+
+.section#reserva .section-logo__image {
+  height: 100%;
+}
+
+.section#reserva .section__contact {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 75%;
+  text-align: center;
+}
+
+.section#reserva .section__contact-headline {
+  font-size: 36px;
+  margin: 0;
+}
+
+.section#reserva .section__contact-link {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: #333333;
+}
+
+.section#reserva .section__contact-phone {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
+  color: #333333;
+}
+
+.section#reserva .section__contact-text {
+  margin-top: 0;
+}
+
+.section#reserva .section__headline {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 7%;
+  max-width: 800px;
+  color: #000;
+  font-size: 38px;
+  font-size: 2.7vw;
+  font-weight: lighter;
+  text-align: center;
+
+  @include respond-to ("small"){
+    font-size: 24px;
+    width: 95%;
+  }
+}
+
+.section#reserva .section__reserva {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 90%;
+}
+
+.section#reserva .section__reserva-link {
+  display: inline-block;
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #3cbf43;
+  border: 1px solid #309835;
+  transition: all 0.4s;
+
+  @include respond-to ("small"){
+    font-size: 16px;
+    width: 220px;
+    text-align: center;
+  }
+}
+
+.section#reserva .section__reserva-link:hover {
+  background-color: #309835;
+  border: 1px solid #3cbf43;
+  transition: all 0.4s;
+}

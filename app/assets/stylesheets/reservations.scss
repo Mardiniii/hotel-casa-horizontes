@@ -1,0 +1,97 @@
+.reservation-box {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  padding-left: 10px;
+  padding-top: 5px;
+  height: 80px;
+  width: 600px;
+  background-color: #00c7c6;
+  border-radius: 10px 10px 0 0;
+  box-shadow: -4px -1px 5px rgba(44, 44, 44, 0.2);
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  animation: reservation 0.6s 0.7s ease-out backwards;
+  -webkit-animation: reservation 0.6s 0.7s ease-out backwards;
+}
+@-webkit-keyframes reservation {
+  from {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+  }
+}
+@keyframes reservation {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+  }
+}
+
+.reservation-box:hover {
+  padding-top: 13px;
+  height: 100px;
+  width: 600px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.reservation-box__fieldset {
+  float: left;
+  padding: 7px;
+  margin: 0;
+  width: 33%;
+  border: none;
+}
+
+.reservation-box__input {
+  margin: 0;
+  width: 100%;
+}
+
+.reservation-box__label {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.reservation-box__submit {
+  margin-top: 19px;
+  height: 27px;
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #3cbf43;
+  border: 1px solid #309835;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+
+.reservation-box__submit:hover {
+  background-color: #309835;
+  border: 1px solid #3cbf43;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
