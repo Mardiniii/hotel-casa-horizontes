@@ -1,5 +1,6 @@
 'use strict';
 $(document).on("ready page:load", function() {
+  var $body = $("html, body");
   var piling_options = {
       anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivethPage', 'sixthPage', 'seventhPage'],
       navigation: false,
@@ -58,8 +59,14 @@ $(document).on("ready page:load", function() {
     if (small_resolution.matches) {
       $('#pagestart').attr("id", "pagepiling");
       $('#pagepiling').pagepiling(piling_options);
+      $body.css({
+        overflow: "hidden"
+      });
     }else{
       $('#pagepiling').attr("id", "pagestart");
+      $body.css({
+        overflow: "visible"
+      });
     }
   }
 
