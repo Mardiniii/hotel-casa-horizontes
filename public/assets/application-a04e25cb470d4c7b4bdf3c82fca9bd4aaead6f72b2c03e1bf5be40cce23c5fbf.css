@@ -523,32 +523,46 @@ body {
   background-repeat: no-repeat;
 }
 
-/* line 31, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+/* line 33, app/scss/components/social.scss */
+/* line 32, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
 .navigation__social-link--twitter {
-  background-image: url("/assets/casa-horizontes/icons/twitter-icon-c3f329d3ace6616772d03c4e5643078f1513f2feca662e35fda7f96187abe607.png");
+  background-image: url("/assets/casa-horizontes/icons/rsz_twitter-icon-9d38d38e187a6f9a6e1b1fdd7cab5b7cafddeb869f74adaa6090291b30148286.png");
 }
 
-/* line 35, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+/* line 33, app/scss/components/social.scss */
+/* line 36, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+.navigation__social-link--pinterest {
+  background-image: url("/assets/casa-horizontes/icons/rsz_pinterest-icon-0d3b5aba676b7dc6630ec106b81d15a695b604790806f88abf8707338cddf670.png");
+}
+
+/* line 33, app/scss/components/social.scss */
+/* line 40, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+.navigation__social-link--youtube {
+  background-image: url("/assets/casa-horizontes/icons/rsz_youtube-icon-3bc997bd19945120dcc7a445a2914e1dcde0c3c1835fac2e6eaa8c6cb16eca77.png");
+}
+
+/* line 36, app/scss/components/social.scss */
+/* line 44, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
 .navigation__social-link--facebook {
   background-image: url("/assets/casa-horizontes/icons/rsz_facebook-1024-black-f2d63f9240cd491b87e4e87bd2750657066fe9034c01f18a6d12dc295816acee.png");
 }
 
-/* line 38, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+/* line 47, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
 .navigation__social-link--instagram {
   background-image: url("/assets/casa-horizontes/icons/rsz_instagram-1024-black-a35598947fc7792436bc46c508e0bfb28c2077629f9eacc013c9daa18713ab63.png");
 }
 
-/* line 41, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+/* line 50, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
 .navigation__social-link--tripadvisor {
   background-image: url("/assets/casa-horizontes/icons/rsz_tripadvisor-1024-black-bc513ef631ae6389eb24199fd4da054f91c30953315b4a4a8d143a25f0519607.png");
 }
 
-/* line 45, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+/* line 54, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
 .navigation__social-text {
   font-size: 16px;
 }
 @media (max-width: 767px) {
-  /* line 45, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
+  /* line 54, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/social.scss */
   .navigation__social-text {
     display: none;
   }
@@ -1142,9 +1156,10 @@ body {
   /* line 18, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
   .section#cocina .section__decoration {
     z-index: 0;
+    width: 100vw;
   }
 }
-/* line 32, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 33, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__headline {
   position: absolute;
   bottom: 170px;
@@ -1152,7 +1167,7 @@ body {
   font-weight: lighter;
   letter-spacing: 1px;
 }
-/* line 40, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 41, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__text-one {
   display: block;
   font-size: 45px;
@@ -1160,24 +1175,24 @@ body {
   width: 320px;
 }
 @media (max-width: 767px) {
-  /* line 40, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+  /* line 41, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
   .section#cocina .section__text-one {
     font-size: 35px;
   }
 }
-/* line 51, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 52, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__text-two {
   display: block;
   font-size: 48px;
   line-height: 1;
 }
 @media (max-width: 767px) {
-  /* line 51, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+  /* line 52, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
   .section#cocina .section__text-two {
     font-size: 38px;
   }
 }
-/* line 61, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 62, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__decoration-line-one {
   position: absolute;
   left: -140px;
@@ -1186,7 +1201,7 @@ body {
   width: 355px;
   background-color: #fff;
 }
-/* line 70, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 71, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__decoration-line-two {
   position: absolute;
   left: 30px;
@@ -1195,7 +1210,7 @@ body {
   width: 280px;
   background-color: #fff;
 }
-/* line 79, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 80, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__chef {
   position: absolute;
   top: 100px;
@@ -1213,12 +1228,12 @@ body {
   background: url("/assets/casa-horizontes/decorations/chef-fc31e4b2ac581c83f02326e829024f237de163191e45847141cedff9edb3e37e.png");
 }
 @media (max-width: 767px) {
-  /* line 79, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+  /* line 80, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
   .section#cocina .section__chef {
     display: none;
   }
 }
-/* line 99, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
+/* line 100, /Users/apple/Desktop/Aplicaciones Clientes/Hotel Casa Horizontes/hotel-casa-horizontes/app/assets/stylesheets/sections/cocina.scss */
 .section#cocina .section__link {
   position: absolute;
   left: 50px;

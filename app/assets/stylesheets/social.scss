@@ -28,10 +28,19 @@
   background-repeat: no-repeat;
 }
 
+/* line 33, app/scss/components/social.scss */
 .navigation__social-link--twitter {
-  background-image: url(asset-path('casa-horizontes/icons/twitter-icon.png'));
+  background-image: url(asset-path('casa-horizontes/icons/rsz_twitter-icon.png'));
 }
-
+/* line 33, app/scss/components/social.scss */
+.navigation__social-link--pinterest {
+  background-image: url(asset-path('casa-horizontes/icons/rsz_pinterest-icon.png'));
+}
+/* line 33, app/scss/components/social.scss */
+.navigation__social-link--youtube {
+  background-image: url(asset-path('casa-horizontes/icons/rsz_youtube-icon.png'));
+}
+/* line 36, app/scss/components/social.scss */
 .navigation__social-link--facebook {
   background-image: url(asset-path('casa-horizontes/icons/rsz_facebook-1024-black.png'));
 }
